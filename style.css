@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+}
+
+p, h3, h5 {
+    color: white;
+    font-family: Arial;
+}
+
+p {
+    font-size: 1em;
+    text-align: justify;
+    padding: 10px;
+}
+
+.central-body img {
+    border-radius: 10px;
+}
+
+.header {
+    /* background-color: rgb(12, 232, 248);
+    height: 10vh; */
+    display: flex;
+    height: 15%;
+    background-color: green;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    font-family: Impact;
+    color: white;
+    font-size: 3.5vw;
+    margin-left: 10px;
+}
+    
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 80%;
+    background-color: green;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.escudo {
+    width: 15%;
+}
+
+.titulo {
+    width: 80vw;
+}
+
+.logo-container .escudo img {
+    max-width: 90%;
+    height: 90%;
+    padding: 10px;
+}
+
+.redes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    width: 20%;
+    background-color: green;
+}
+
+.redes-container div {
+    justify-content: center;
+}
+
+.redes-container .logos {
+    justify-content: flex-start;
+}
+
+.logos img{
+    max-width: 90%;
+    height: auto;
+}
+
+.central {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-bar {
+    width: 20%;
+    height: 90vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-size: 2vw;
+}
+
+.side-bar div {
+    padding: 10%;
+}
+
+.resaltado {
+    background: rgb(114, 236, 149);
+    border-radius: 10px;
+    padding: 5% 5%;
+    border: 1px;
+}
+
+.normal {
+    background: none;
+    border: none;
+    padding: 5%;
+    margin: 0;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(114, 236, 149);
+    border-radius: 10px;
+    padding: 5% 5%;
+    border: 1px;
+}
+
+.central-body {
+    width: 85%;
+    height: 90vh;
+    background-image: url("../images/back_desk.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.titulo {
+    background-color: green;
+    color: white;
+    font-family: Arial;
+    font-size: 2vw;
+    border-radius: 5px;
+    padding: 15px;
+    width: 90%;
+    margin: 3%;
+    /* font-weight: bold;
+    padding: 15px;
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-family: Tahoma;
+    font-size: 20px;
+    width: 90%;
+    height: 2%;
+    display: flex;
+    align-items: center;
+    position: absolute;  */
+}
+
+.login-form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    height: 40vh;
+    margin: 3%;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    width: 50%;
+    padding: 15px;
+    font-family: Arial;
+}
+
+.login-form p {
+    color: black;
+}
+
+.login-form form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.form-group {
+    padding: 15px;
+    width: 30vw;
+}
+
+.form-group label {
+    font-size: 100%;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 3% 0px;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+    background-color: #a49f9f; 
+}
+
+.login-button {
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 0;
+    color:white;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.texto-registro {
+    color: black;
+}
+
+.sector {
+    margin: 3%;
+    height: 80%;
+    width: 90%;
+    background-color:rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 3% ;
+}
+
+.sector, p, h3, h5 {
+    color: black;
+    padding: 0px 10px ;
+}
+
+.imgNoticia1 {
+    padding: 10px;
+}
+
+.textoH3 {
+    padding-top: 2%;
+}

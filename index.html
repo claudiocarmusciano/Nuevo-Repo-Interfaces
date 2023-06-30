@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/socios.js"></script>
+    <script src="js/actividades.js"></script>
+    <script src="js/contacto.js"></script>
+    <script src="js/galeria.js"></script>
+    <script src="js/noticias.js"></script>
+    <script src="js/menuUsuarios.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo-container">
+                <div class="escudo">
+                    <img src="/images/escudo.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h1>Sociedad de Fomento MARIANO MORENO</h1>
+                </div>
+            </div>
+            <div class="redes-container">
+                <div class="logos"><a href="https://www.facebook.com/sociedadfomento.marianomoreno.14?locale=es_LA"> <img src="images/LogoFacebook.png" alt=""></a></div>
+                <div class="logos"><a href="https://www.instagram.com/explore/locations/2031832467057111/club-mariano-moreno-olavarria/"> <img src="images/LogoInstagram.png" alt=""></a></div>
+                <div class="logos"><a href="https://www.youtube.com/watch?v=cNnMPwy-WLU"><img src="images/LogoYoutube.png" alt=""></a></div>
+            </div>
+        </div>
+
+        <div class="central">
+
+            <div class="side-bar">
+                <div><button id="btnHome" class="normal">Home</button></div>
+                <div><button id="btnSocios" class="normal">Socios</button></div>
+                <div><button id="btnActividades" class="normal">Actividades</button></div>
+                <div><button id="btnContacto" class="normal">Contacto</button></div>
+                <div><button id="btnGaleria" class="normal">Galeria</button></div>
+                <div><button id="btnNoticias" class="normal">Noticias</button></div>
+            </div>
+
+            <div id="central-body" class="central-body"></div>
+
+        </div>
+    </div>
+
+    <script>
+        const centralBody = document.getElementById("central-body");
+        const botonHome = document.getElementById("btnHome");
+        const botonSocios = document.getElementById("btnSocios");
+        const botonActividades = document.getElementById("btnActividades");
+        const botonContacto = document.getElementById("btnContacto");
+        const botonGaleria = document.getElementById("btnGaleria");
+        const botonNoticias = document.getElementById("btnNoticias");
+
+        const textoBotonHome = '<p> Se presionó el botón Home </p>';
+        const textoBotonSocios = '<p> Se presionó el botón Socios </p>';
+        const textoBotonActividades = '<p> Se presionó el botón Actividades </p>';
+        const textoBotonContacto = '<p> Se presionó el botón Contacto </p>';
+        const textoBotonGaleria = '<p> Se presionó el botón Galeria </p>';
+        const textoBotonNoticias = '<p> Se presionó el botón Noticias </p>';
+
+        botonHome.addEventListener("click", home);
+        botonSocios.addEventListener("click", socios);
+        botonActividades.addEventListener("click", actividades);
+        botonContacto.addEventListener("click", contacto);
+        botonGaleria.addEventListener("click", galeria);
+        botonNoticias.addEventListener("click", noticias);
+    </script>
+    
+</body>
+</html>
