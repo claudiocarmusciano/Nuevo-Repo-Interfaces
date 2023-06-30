@@ -4,7 +4,7 @@ function contacto() {
     const textoBotonContacto = `
         <div class="titulo">Contacto</div>
         <div class="sector">
-            <h3> CONTACTANOS </h3><br>
+            <h3 class="textoH3"> CONTACTANOS </h3><br>
             <h5> Dirección: </h5>
             <p> Av Sarmiento 3093, Olavarría, Provincia de Buenos Aires </p><br>
 
