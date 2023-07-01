@@ -83,49 +83,54 @@ function cuotas() {
                         <tr>
                             <td class="dato-tabla">1</td>
                             <td class="dato-tabla">Enero 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de febrero de 2023</td>
-                            <td class="dato-tabla">05 de febrero de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/02/2023</td>
+                            <td class="dato-tabla">05/02/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">2</td>
                             <td class="dato-tabla">Febrero 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de marzo de 2023</td>
-                            <td class="dato-tabla">10 de marzo de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/03/2023</td>
+                            <td class="dato-tabla">10/03/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">3</td>
                             <td class="dato-tabla">Marzo 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de abril de 2023</td>
-                            <td class="dato-tabla">04 de abril de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/04/2023</td>
+                            <td class="dato-tabla">04/04/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">4</td>
                             <td class="dato-tabla">Abril 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de mayo de 2023</td>
-                            <td class="dato-tabla">09 de mayo de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/05/2023</td>
+                            <td class="dato-tabla">09/05/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">5</td>
                             <td class="dato-tabla">Mayo 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de junio de 2023</td>
-                            <td class="dato-tabla">05 de junio de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/06/2023</td>
+                            <td class="dato-tabla">05/06/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">6</td>
                             <td class="dato-tabla">Junio 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de julio de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/07/2023</td>
                             <td class="dato-tabla">Aún no pagada</td>
                         </tr>
                     </tbody>
                 </table>
                 <p class="texto-informacion">Estado: Al día</p>
-                <p class="texto-informacion">Próximo vencimiento de la cuota: 10 de agosto de 2023</p>
+                <p class="texto-informacion">Próximo vencimiento de la cuota: 10/08/2023</p>
+            </div>
+            <div class="sidebar2">
+                <div><button id="btnCuotas" class="normal">Cuotas</button></div>
+                <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
+                <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
             </div>
     `;
 

@@ -130,9 +130,9 @@ button:hover {
 }
 
 .sidebar2 {
-    margin-left: 5px;
+    margin-left: 25px;
     width: 17%;
-    height: 40vh;
+    height: 17%;
     background-color: green;
     display: flex;
     flex-direction: column;
@@ -141,9 +141,9 @@ button:hover {
     font-family: Arial;
     font-size: 1.7vw;
 }
-.sidebar2 div {
+/* .sidebar2 div {
     padding: 1%;
-}
+} */
 
 .central-body {
     width: 85%;
@@ -324,6 +324,12 @@ h6 {
 .encabezado-tabla, .dato-tabla {
     border: 1px solid #ccc;
     padding: 7px;
+}
+
+.dato-tabla-monto {
+    border: 1px solid #ccc;
+    padding: 7px;
+    text-align: right;
 }
 
 .encabezado-tabla {
