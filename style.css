@@ -71,17 +71,8 @@ h1 {
     background-color: green;
 }
 
-/* .redes-container div {
-    justify-content: center;
-} */
-
 .redes-container .logos {
     padding: 0px 5px;
-}
-
-.logos img{
-    /* max-width: 90%;
-    height: auto; */
 }
 
 .central {
@@ -173,10 +164,6 @@ button:hover {
     justify-content: space-between;
 
 }
-
-/* .titulo .busqueda {
-    font-size: 1.2em;
-} */
 
 .titulo div p {
     background-color: green;
@@ -273,30 +260,9 @@ button:hover {
     padding: 5px 10px ;
 }
 
-/* .sector,
-p,
-h1,
-h2,
-h3,
-h5 {
-    color: white;
-    padding: 0px 10px;
-    text-align: center;
-} */
-
 .tituloActividad {
     color: black;
 }
-
-
-/*
-.sector
-h2,
-h4,
-h6 {
-    color: black;
-}
-*/
 
 .textos-sector p {
     font-size: 1.2em;
@@ -314,6 +280,65 @@ h6 {
 
 .body {
     font-size: 18px;
+}
+
+/* .box_actividad {
+    max-width: 100%;
+    max-height: 90%;
+    overflow: auto;
+    flex-grow: 3;
+    vertical-align: middle;
+    align-items: space-around;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin: 40px auto;
+} */
+
+.sector button {
+    padding: 10px;
+}
+
+#sector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+#sector div {
+    padding: 20px;   
+}
+
+/* button .image_actividad {
+    padding: 10px;
+} */
+
+.image_actividad {
+    margin: 20px;
+    height: 200px;
+    border-radius: 5px;
+    border: black solid 0.1px;
+}
+
+.image_container_acrobacia,
+.image_container_ajedrez,
+.image_container_badmintong,
+.image_container_baile_Gym,
+.image_container_basquet,
+.image_container_deportiva,
+.image_container_folklore,
+.image_container_gym_adulto,
+.image_container_infantil,
+.image_container_taekondo,
+.image_container_voley,
+.image_container_zumba {
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .tabla-informacion {
@@ -480,4 +505,69 @@ h6 {
     margin-left: 15%;
     border-radius: 5px; 
     position: absolute;
+}
+
+
+.image_container_acrobacia {
+    background-image: url("images/actividades/acrobacia.jpg");
+}
+
+.image_container_ajedrez {
+    background-image: url("images/actividades/ajedrez.jpg");
+}
+
+.image_container_badmintong {
+    background-image: url("images/actividades/badminton.jpg");
+}
+
+.image_container_baile_Gym {
+    background-image: url("images/actividades/baileGym.jpg");
+}
+
+.image_container_basquet {
+    background-image: url("images/actividades/basquet.jpg");
+}
+
+.image_container_deportiva {
+    background-image: url("images/actividades/deportiva.jpg");
+}
+
+.image_container_folklore {
+    background-image: url("images/actividades/folklore.jpg");
+}
+
+.image_container_gym_adulto {
+    background-image: url("images/actividades/gymAdultos.jpg");
+}
+
+.image_container_infantil {
+    background-image: url("images/actividades/infantil.jpg");
+}
+
+.image_container_taekondo {
+    background-image: url("images/actividades/taekwondo.jpg");
+}
+
+.image_container_voley {
+    background-image: url("images/actividades/voley.jpg");
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5%;
+}
+
+.images img {
+    padding: 0.2%;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.image_container_zumba {
+    background-image: url("images/actividades/zumba.jpg");
 }
