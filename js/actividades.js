@@ -81,9 +81,7 @@ function acrobacia() {
 
                 <h3 class="tituloActividad">Profesora : Viviana La Cava</h3>
 
-
-                <button>Contactenos</button>
-
+                <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
             </div>
         </div>
     </div>
@@ -116,8 +114,7 @@ function ajedrez() {
                         <h3 class="tituloActividad">Profesor: Dario Maidana</h3>
 
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -153,8 +150,7 @@ function badmington() {
                         <h3 class="tituloActividad">Profesor: Federico Pita</h3>
 
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -188,8 +184,7 @@ function baileGym() {
                         <h3 class="tituloActividad">Profesora especializada</h3>
 
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -230,8 +225,7 @@ function basquet() {
                             <h3 class="tituloActividad">Profesor :Tito Herrera</h3>
 
 
-                            <div><button id="btnContacto" class="normal">Contacto</button></div>
-                        </div>
+                            <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>                        </div>
                     </div>
                 </div>
             </div>
@@ -265,8 +259,7 @@ function deportiva() {
                         <h3 class="tituloActividad">Profesora: Jael Pérez Oquiñena</h3>
 
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -300,8 +293,7 @@ function folklore() {
                         <h3 class="tituloActividad">Profesora: Analía Melo</h3>
 
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -336,8 +328,7 @@ function gymAdultos() {
                         <h3 class="tituloActividad">Profesora especializada</h3>
 
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -371,8 +362,7 @@ function infantil() {
                         <h3 class="tituloActividad">Profesora : Jael Pérez Oquiñena</h3>
 
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -403,8 +393,7 @@ function taekwondo() {
                         <h2 class="tituloActividad">Miércoles y Viernes de 19:00 a 20:30 hs</h2>
                         <h3 class="tituloActividad">Profesora : Lorena Ingliso</h3>
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -443,92 +432,8 @@ function voley() {
                         <h2 class="tituloActividad">Lunes, Miércoles y Viernes de 20:00 a 21: 30 hs</h2>
 
                         <h3 class="tituloActividad">Profesor : Laureano Día </h3>
-
-
-                        <h1 class="tituloActividad">Sub 18 Femenina</h1>
-
-                        <h2 class="tituloActividad">Lunes, Miércoles y Viernes de 20:00 a 21:30 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Laureano Día </h3>
-
-
-                        <h1 class="tituloActividad">Sub 18 Masculina</h1>
-
-                        <h2 class="tituloActividad">Lunes, Miércoles y Viernes de 20:00 a 21:30 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Federico Laborde</h3>
-
-
-                        <h1 class="tituloActividad">Sub 15 Masculina</h1>
-
-                        <h2 class="tituloActividad">Lunes, Miércoles y Viernes de 19:00 a 20:00 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Federico Laborde</h3>
-
-
-                        <h1 class="tituloActividad">Sub 15 Femenina</h1>
-
-                        <h2 class="tituloActividad">Lunes, Miércoles y Viernes de 19:00 a 20:00 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Federico Laborde</h3>
-
-
-                        <h1 class="tituloActividad">Sub 15 Recreativo Mixto</h1>
-
-                        <h2 class="tituloActividad">Lunes, Miércoles y Viernes de 19:00 a 20:00 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Federico Laborde</h3>
-
-
-
-                        <h1 class="tituloActividad">Mini voley Mixto</h1>
-
-                        <h2 class="tituloActividad">Lunes y Miércoles de 18:00 a 19:00 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Federico Laborde</h3>
-
-
-
-                        <h1 class="tituloActividad">Sub 13 Mixto</h1>
-
-                        <h2 class="tituloActividad">Lunes y Miércoles de 18:00 a 19:00 hs</h2>
-
-                        <h3 class="tituloActividad">Profesora : Marian Barboza</h3>
-
-
-
-                        <h1 class="tituloActividad">Voley Femenino Recreativo</h1>
-
-                        <h2 class="tituloActividad">Martes y Jueves de 18:00 a 19:30 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Laureano Diaz</h3>
-
-
-                        <h1 class="tituloActividad">Maxi Voley Femenino</h1>
-
-                        <h2 class="tituloActividad">Martes y Jueves de 18:00 a 19:30 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Laureano Diaz</h3>
-
-
-
-                        <h1 class="tituloActividad">Maxi Voley e Intermedia Masculina</h1>
-
-                        <h2 class="tituloActividad">Martes y Jueves de 19:30 a 21:00 hs</h2>
-
-                        <h3 class="tituloActividad">Profesor : Laureano Diaz</h3>
-
-
-
-                        <h1 class="tituloActividad">Newcom - Voley adaptado para mayores</h1>
-
-                        <h2 class="tituloActividad">Martes y Jueves de 14:00 a 16:00 hs</h2>
-                        <h6 class="tituloActividad">(actividad compartida con el cef N°124)</h6>
-
-                        <h3 class="tituloActividad">Profesor : Guillermo Padin</h3>
                         
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -562,8 +467,7 @@ function zumba() {
                         <h3 class="tituloActividad">Profesora: Lucrecia Vecchi</h3>
 
 
-                        <button>Contactenos</button>
-
+                        <button id="btnContacto" class="normal" onclick="contacto()">Contacto</button>
                     </div>
                 </div>
             </div>

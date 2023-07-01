@@ -12,10 +12,10 @@ function socios() {
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password">
                 </div>
-                <button class="login-button" id="register-button">Loguearse</button>
+                <button class="login-button" id="login-button">Loguearse</button>
             </form>
-            <div>
-                <p class="texto_registro">No estás registrado? <a href="registro.html">¡Regístrate aquí!</a></p>
+            <div class="registro-container">
+                <button class="register-button" id="register-button">No estás registrado?¡Regístrate aquí!</button>
             </div>
             <div class="ventajas">
                 <p> Averiguá las ventajas de hacerte Socio haciendo click <a href="registro.html">aquí</a> </p>
@@ -26,10 +26,16 @@ function socios() {
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonSocios;
 
-    const botonLoguearse = document.getElementById('register-button');
+    const botonLoguearse = document.getElementById('login-button');
     botonLoguearse.addEventListener('click', function (e) {
         e.preventDefault();
         menuUsuarios(); 
+    });
+
+    const botonRegistrarse = document.getElementById('register-button');
+    botonRegistrarse.addEventListener('click', function (e) {
+        e.preventDefault();
+        registrarUsuario(); 
     });
 
     function menuUsuarios() {
@@ -71,9 +77,58 @@ function socios() {
             infoContainer.style.display = 'block';
             mostrarSugerencias();
         });
+    
     }
 
-}
+    function registrarUsuario() {
+        const centralBody = document.getElementById("central-body");
+        const textoRegistrarUsuario = `
+        <div class="titulo">Socios</div>
+        <div class="registro-form"> 
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Apellido y Nombre</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni" name="dni">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario">
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="submit" class="boton-registrarse">Registrarse</button>
+            </form>
+        </div>
+        `;
+    
+        centralBody.innerHTML = "";
+        centralBody.innerHTML = textoRegistrarUsuario;
+
+    }
+
+
+
+
+
+
 
 function cuotas() {
     const centralBody = document.getElementById("info-container");
@@ -192,4 +247,5 @@ function mostrarSugerencias() {
     `;
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoMenuSugerencias;
+}
 }
