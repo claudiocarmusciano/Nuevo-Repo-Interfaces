@@ -307,7 +307,14 @@ button:hover {
 }
 
 #sector {
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+#sector div {
+    padding: 20px;   
 }
 
 /* button .image_actividad {
