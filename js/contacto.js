@@ -6,16 +6,16 @@ function contacto() {
         <div class="sector">
             <div class="textos-sector">
                 <h2 class="textoH3"> CONTACTANOS </h2><br>
-                <h5> Dirección: </h5>
+                <h4> Dirección: </h4>
                 <p> Av Sarmiento 3093, Olavarría, Provincia de Buenos Aires </p><br>
 
-                <h5> Teléfono: </h5>
+                <h4> Teléfono: </h4>
                 <p> 02284 41-1682 </p><br>
                 
-                <h5> Whatsapp: </h5>
+                <h4> Whatsapp: </h4>
                 <p> 02284 59-3021 </p> <br>
                 
-                <p> Mail: </p>
+                <h4> Mail: </h4>
                 <p> sfmarianomoreno@gmail.com </p>
             </div>
         </div>

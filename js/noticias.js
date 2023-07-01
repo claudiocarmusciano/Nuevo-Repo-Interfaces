@@ -22,6 +22,41 @@ function noticias() {
             Costa Sud 2 – 0 Independiente VAF Negro (25/16 y 25/18)<br>
             Municipalidad Benito Juárez 2 – 1 Independiente VAF Negro (23/25 25/16 y 15/6)
         </p>
+
+        <h3 class="textoH3"> Entrega de Escrituras en la S. F. Mariano Moreno </h3>
+        <h5> Se detalló que se entregarán en total 511 escrituras </h5>
+
+        <img class="imgNoticia1" src="../images/noticia2.jpeg"> 
+        <p>
+        Desde la Dirección de Casa de Tierras y Regularización Dominial se emitió una citación para más 
+        de 500 olavarrienses con motivo de una entrega de escrituras que se llevará a cabo este miércoles 
+        en la sede de la Sociedad de Fomento Mariano Moreno, con motivo de un acto que se realizará desde 
+        Escribanía General de Gobierno de la Provincia de Buenos Aires.
+
+        Se detalló que se entregarán en total 511 escrituras, de las cuales 213 corresponden al Instituto 
+        de la Vivienda, mientras que los 298 restantes se enmarcan en la Ley 10.830.
+        </p>
+
+        <h3 class="textoH3"> La S. F. Mariano Moreno trabaja en su nuevo predio </h3>
+        <h5> Veyrand se mostró agradecido con las autoridades del Municipio, pilar importante 
+        para la concreción de este proyecto. </h5>
+
+        <img class="imgNoticia1" src="../images/noticia3.jpg"> 
+        <p>
+        Para la gestión municipal que encabeza el intendente Ezequiel Galli es prioritario el acceso 
+        igualitario de la comunidad a la cultura, el deporte y a lugares de esparcimiento al aire libre, 
+        pilares que configuran una mejor calidad de vida.
+
+        En este contexto, en la mañana de este martes el intendente Ezequiel Galli, junto al secretario 
+        de Desarrollo Humano y Calidad de Vida Diego Robbiani, visitaron el predio donde funcionará un 
+        centro recreativo que estará a cargo de la Sociedad de Fomento Mariano Moreno. El presidente de la 
+        Comisión Directiva de dicha entidad, José Luis Veyrand, también participó de la recorrida, 
+        acompañado por demás integrantes de la misma.
+        
+        La gestión municipal entregó en comodato el terreno a la Sociedad de Fomento para la futura 
+        construcción de dicho Centro Recreativo: un predio de siete hectáreas ubicado al fondo de la 
+        Av. Ituzaingó, al lado de Talleres Protegidos.
+        </p>
     </div>
     `;
 
