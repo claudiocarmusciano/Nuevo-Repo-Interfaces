@@ -125,9 +125,9 @@ button:hover {
 }
 
 .sidebar2 {
-    margin-left: 5px;
+    margin-left: 3%;
     width: 17%;
-    height: 40vh;
+    height: 20%;
     background-color: green;
     display: flex;
     flex-direction: column;
@@ -135,6 +135,7 @@ button:hover {
     color: white;
     font-family: Arial;
     font-size: 1.7vw;
+    padding: 1.5%;
 }
 .sidebar2 div {
     padding: 1%;
@@ -248,16 +249,3 @@ button:hover {
     padding-top: 2%;
 }
 
-<<<<<<< HEAD
-=======
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0.5%;
-}
-
-.images img {
-    padding: 0.2%;
-}
->>>>>>> cddea77ff04eddd68a6c7dc924b810becd5e56c6
