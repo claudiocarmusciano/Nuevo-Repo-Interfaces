@@ -65,7 +65,8 @@ function socios() {
 function cuotas() {
     const centralBody = document.getElementById("central-body");
     const textoMenuCuotas = `
-    <div class="titulo">Socios - Cuotas</div>
+        <div class="center">
+            <div class="titulo">Socios - Cuotas</div>
             <div id="info-container">
                 <h2 class="titulo-informacion">Información de las cuotas del socio:</h2>
                 <table class="tabla-informacion">

@@ -6,51 +6,51 @@ function actividades() {
     <div class="titulo">Actividades</div>
         <div class="sector" id="sector">
             <div>
-            <button onclick="acrobacia()"><img src="images/actividades/acrobacia.jpg" alt="" class="image_actividad"></button>
+                <button onclick="acrobacia()"><img src="images/actividades/acrobacia.jpg" alt="" class="image_actividad"></button>
             </div>
             
             <div>
-            <button onclick="ajedrez()"><img src="images/actividades/ajedrez.jpg" alt="" class="image_actividad"></button>
+                <button onclick="ajedrez()"><img src="images/actividades/ajedrez.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="badmington()"><img src="images/actividades/badminton.jpg" alt="" class="image_actividad"></button>
+                <button onclick="badmington()"><img src="images/actividades/badminton.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="baileGym()"><img src="images/actividades/baileGym.jpg" alt="" class="image_actividad"></button>
+                <button onclick="baileGym()"><img src="images/actividades/baileGym.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="basquet()"><img src="images/actividades/basquet.jpg" alt="" class="image_actividad"></button>
+                <button onclick="basquet()"><img src="images/actividades/basquet.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="deportiva()"><img src="images/actividades/deportiva.jpg" alt="" class="image_actividad"></button>
+                <button onclick="deportiva()"><img src="images/actividades/deportiva.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="folklore()"><img src="images/actividades/folklore.jpg" alt="" class="image_actividad"></button>
+                <button onclick="folklore()"><img src="images/actividades/folklore.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="gymAdultos()"><img src="images/actividades/gymAdultos.jpg" alt="" class="image_actividad"></button>
+                <button onclick="gymAdultos()"><img src="images/actividades/gymAdultos.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="infantil()"><img src="images/actividades/infantil.jpg" alt="" class="image_actividad"></button>
+                <button onclick="infantil()"><img src="images/actividades/infantil.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="taekwondo()"><img src="images/actividades/taekwondo.jpg" alt="" class="image_actividad"></button>
+                <button onclick="taekwondo()"><img src="images/actividades/taekwondo.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="voley()"><img src="images/actividades/voley.jpg" alt="" class="image_actividad"></button>
+                <button onclick="voley()"><img src="images/actividades/voley.jpg" alt="" class="image_actividad"></button>
             </div>
 
             <div>
-            <button onclick="zumba()"><img src="images/actividades/zumba.jpg" alt="" class="image_actividad"></button>
+                <button onclick="zumba()"><img src="images/actividades/zumba.jpg" alt="" class="image_actividad"></button>
             </div>
 
     </div>`;

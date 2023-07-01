@@ -190,7 +190,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     background-color: rgb(240, 240, 240);
-    height: 40vh;
+    height: 45%;
     margin: 3%;
     border-radius: 5px;
     font-size: 1.5vw;
@@ -276,16 +276,10 @@ button:hover {
     padding-top: 2%;
 }
 
+/* INFORMACION DE CUOTAS DEL SOCIO */
 
-/* -------------------- Actividades ---------------------- */
-
-.container_principal {
-    display: flex;
-    flex-direction: row;
-}
-
-.sidebar {
-    flex-grow: 1;
+.body {
+    font-size: 18px;
 }
 
 /* .box_actividad {
@@ -340,73 +334,164 @@ button:hover {
 .image_container_taekondo,
 .image_container_voley,
 .image_container_zumba {
+}
+
+.tabla-informacion {
+    border-collapse: collapse;
     width: 100%;
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
-.image_container_acrobacia {
-    background-image: url("images/actividades/acrobacia.jpg");
+.encabezado-tabla, .dato-tabla {
+    border: 1px solid #ccc;
+    padding: 7px;
 }
 
-.image_container_ajedrez {
-    background-image: url("images/actividades/ajedrez.jpg");
+.encabezado-tabla {
+    background-color: #f2f2f2;
 }
 
-.image_container_badmintong {
-    background-image: url("images/actividades/badminton.jpg");
+.tabla-informacion tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-.image_container_baile_Gym {
-    background-image: url("images/actividades/baileGym.jpg");
+.titulo-informacion {
+    font-size: 22px;
+    margin-top: -25px;
 }
 
-.image_container_basquet {
-    background-image: url("images/actividades/basquet.jpg");
+.texto-informacion {
+    font-size: 16px;
 }
 
-.image_container_deportiva {
-    background-image: url("images/actividades/deportiva.jpg");
+
+.contenedor-informacion .lista-beneficios strong {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
-.image_container_folklore {
-    background-image: url("images/actividades/folklore.jpg");
+.lista-beneficios {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.image_container_gym_adulto {
-    background-image: url("images/actividades/gymAdultos.jpg");
-}
-
-.image_container_infantil {
-    background-image: url("images/actividades/infantil.jpg");
-}
-
-.image_container_taekondo {
-    background-image: url("images/actividades/taekwondo.jpg");
-}
-
-.image_container_voley {
-    background-image: url("images/actividades/voley.jpg");
-}
-
-.images {
+.sugerencias-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0.5%;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.images img {
-    padding: 0.2%;
+#sugerencia {
+    width: 100%;
+    height: 50%;
 }
 
-.highlight {
-    background-color: yellow;
+#enviar-sugerencia {
+    margin-top: 10px;
+}
+
+.sidebar2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(4, 130, 4);
+}
+
+.sidebar2 li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar2 a {
+    text-align: block;
+    color: white;
+    display: flex;
+    padding: 5px;
+    margin-top: 30px;
+    font-family: Tahoma;
+    font-size:larger;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.image_container_zumba {
-    background-image: url("images/actividades/zumba.jpg");
+/* FORMULARIO LOGIN SOCIOS */
+
+/* .login-form {
+    background-color: white;
+    border: 4px solid black;
+    padding: 40px;
+    width: 460px;
+    height: 270px;
+    margin-top: 14.2%; 
+    margin-left: 16.4%;
+    border-radius: 5px; 
+    position: absolute;
+}
+  
+.login-form h2 {
+    text-align: center;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+  
+.login-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 5px; 
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+  
+.login-button:hover {
+    background-color: darkgreen;
+}
+  
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid #0e0e0e;
+    border-radius: 5px;
+    background-color: #a49f9f; 
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; 
+    font-family: Tahoma;
+    font-size: 18px;
+} */
+
+#info-container {
+    background-color: white;
+    border: 4px solid black;
+    padding: 40px;
+    width: 850px;
+    height: 310px;
+    margin-top: -1%;
+    margin-left: 15%;
+    border-radius: 5px; 
+    position: absolute;
 }
