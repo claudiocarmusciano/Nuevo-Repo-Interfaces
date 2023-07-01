@@ -273,6 +273,7 @@ button:hover {
 }
 
 .textoH3 {
+    font-size: 150%;
     padding-top: 2%;
 }
 
@@ -565,7 +566,7 @@ button:hover {
 }
 
 .images img {
-    padding: 0.2%;
+    padding: 2%;
 }
 
 .highlight {
