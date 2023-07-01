@@ -1,7 +1,23 @@
 function galeria() {
     
     const centralBody = document.getElementById("central-body");
-    const textoBotonGaleria = '<p> Se presionó el botón Galeria </p>';
+    const textoBotonGaleria = `
+    <div class="titulo">Galería de fotos</div>
+    <div class="sector">
+        <div class="images">
+            <img src="images/galeria/img01.jpg" alt="">
+            <img src="images/galeria/img02.jpg" alt="">
+            <img src="images/galeria/img03.jpg" alt="">
+            <img src="images/galeria/img04.jpg" alt="">
+            <img src="images/galeria/img05.jpg" alt="">
+            <img src="images/galeria/img06.jpg" alt="">
+            <img src="images/galeria/img07.jpg" alt="">
+            <img src="images/galeria/img08.jpg" alt="">
+            <img src="images/galeria/img09.jpg" alt="">
+            <img src="images/galeria/img10.jpg" alt="">
+        </div>
+    </div>
+    `;
 
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonGaleria;
