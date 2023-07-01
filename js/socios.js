@@ -31,6 +31,7 @@ function socios() {
 function menuUsuarios() {
     const centralBody = document.getElementById("central-body");
     const textoMenuUsuarios = `
+        <div class="titulo">Socios</div>
         <div class="sidebar2">
             <div><button id="btnCuotas" class="normal">Cuotas</button></div>
             <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
