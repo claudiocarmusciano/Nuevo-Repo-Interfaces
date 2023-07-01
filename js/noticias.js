@@ -12,7 +12,7 @@ function noticias() {
         </div>
     </div>
     
-    <div class="sector" id="sector">
+    <div class="sector">
         <h3 class="textoH3"> Nueva fecha de Intermedia </h3>
         <h5> En los gimnasios de Racing y Mariano Moreno se completó la doble fecha de vóleibol. </h5>
 

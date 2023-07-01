@@ -124,6 +124,7 @@ function cuotas() {
                         </tr>
                     </tbody>
                 </table>
+                <br>
                 <p class="texto-informacion">Estado: Al día</p>
                 <p class="texto-informacion">Próximo vencimiento de la cuota: 10/08/2023</p>
             </div>
@@ -133,7 +134,7 @@ function cuotas() {
                 <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
             </div>
     `;
-
+    
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoMenuCuotas;
 }
@@ -146,18 +147,25 @@ function mostrarBeneficios() {
             <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Beneficios para socios:</h2>
                 <ul class="lista-beneficios">
-                    <strong>Descuentos en tiendas</strong> 
-                    <p>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor que incluyen artículos deportivos, ropa, accesorios y más.</p>
+                    <strong>Descuentos en tiendas y espectaculos</strong> 
+                    <p>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
+                    <br>
                     <strong>Acceso a áreas exclusivas del club</strong> 
                     <p>Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
+                    <br>
                     <strong>Participación en eventos y torneos especiales</strong> 
                     <p>Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</p>
+                    <br>
                     <strong>Ofertas especiales en actividades deportivas</strong> 
                     <p>Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</p>
-                    <strong>Descuentos en entradas para espectáculos</strong> 
-                    <p>Disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club o en asociación con él.</p>
+                    <br>
                 </ul>
             </div>
+        </div>
+        <div class="sidebar2">
+                <div><button id="btnCuotas" class="normal">Cuotas</button></div>
+                <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
+                <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
         </div>
     `;
     centralBody.innerHTML = "";
@@ -177,6 +185,11 @@ function mostrarSugerencias() {
                     <button id="enviar-sugerencia">Enviar</button>
                 </div>
             </div>
+    </div>
+    <div class="sidebar2">
+                <div><button id="btnCuotas" class="normal">Cuotas</button></div>
+                <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
+                <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
     </div>
     `;
     centralBody.innerHTML = "";
