@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+.container {
+    max-width: 90%; /* Establece el ancho máximo que deseas */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+  
 p, h2, h3, h5 {
     color: white;
     font-family: Arial;
@@ -18,6 +23,8 @@ p {
 }
 
 .header {
+    /* background-color: rgb(12, 232, 248);
+    height: 10vh; */
     display: flex;
     height: 15%;
     background-color: green;
@@ -28,10 +35,10 @@ p {
 h1 {
     font-family: Impact;
     color: white;
-    font-size: 3.5vw;
+    font-size: 150%;
     margin-left: 10px;
 }
-    
+
 .logo-container {
     display: flex;
     flex-direction: row;
@@ -46,9 +53,7 @@ h1 {
     width: 15%;
 }
 
-.titulo {
-    width: 80vw;
-}
+
 
 .logo-container .escudo img {
     max-width: 90%;
@@ -60,23 +65,23 @@ h1 {
 .redes-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 1px;
+    justify-content: flex-end;
+    padding-right: 15px;
     width: 20%;
     background-color: green;
 }
 
-.redes-container div {
+/* .redes-container div {
     justify-content: center;
-}
+} */
 
 .redes-container .logos {
-    justify-content: flex-start;
+    padding: 0px 5px;
 }
 
 .logos img{
-    max-width: 90%;
-    height: auto;
+    /* max-width: 90%;
+    height: auto; */
 }
 
 .central {
@@ -125,9 +130,9 @@ button:hover {
 }
 
 .sidebar2 {
-    margin-left: 3%;
+    margin-left: 5px;
     width: 17%;
-    height: 20%;
+    height: 40vh;
     background-color: green;
     display: flex;
     flex-direction: column;
@@ -135,7 +140,6 @@ button:hover {
     color: white;
     font-family: Arial;
     font-size: 1.7vw;
-    padding: 1.5%;
 }
 .sidebar2 div {
     padding: 1%;
@@ -146,9 +150,14 @@ button:hover {
     height: 90vh;
     background-image: url("images/back_desk.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center center;
 }
+
+/* .titulo {
+    flex-direction: column;
+    width: 80vw;
+} */
 
 .titulo {
     background-color: green;
@@ -159,6 +168,33 @@ button:hover {
     padding: 15px;
     width: 90%;
     margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* .titulo .busqueda {
+    font-size: 1.2em;
+} */
+
+.titulo div p {
+    background-color: green;
+    color: white;
+    font-family: Arial;
+    font-size: 2vw;
+}
+
+.titulo .busqueda label {
+    font-size: 1.5vw;
+    font-family: Arial;
+    color: white;
+    background-color: green;
+}
+
+.titulo .busqueda input {
+    font-size: 1.5vw;
+    font-family: Arial;
 }
 
 .login-form {
@@ -201,7 +237,7 @@ button:hover {
     padding: 3% 0px;
     border: 1px solid #0e0e0e;
     border-radius: 5px;
-    background-color: #a49f9f; 
+    background-color: #a49f9f;
 }
 
 .login-button {
@@ -210,7 +246,7 @@ button:hover {
     border-radius: 10px;
     padding: 5%;
     margin: 0;
-    color:white;
+    color: white;
     font-size: inherit;
     cursor: pointer;
 }
@@ -236,6 +272,31 @@ button:hover {
     font-family: Arial;
     padding: 5px 10px ;
 }
+
+/* .sector,
+p,
+h1,
+h2,
+h3,
+h5 {
+    color: white;
+    padding: 0px 10px;
+    text-align: center;
+} */
+
+.tituloActividad {
+    color: black;
+}
+
+
+/*
+.sector
+h2,
+h4,
+h6 {
+    color: black;
+}
+*/
 
 .textos-sector p {
     font-size: 1.2em;
