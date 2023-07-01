@@ -14,7 +14,12 @@ function socios() {
                 </div>
                 <button class="login-button" id="register-button">Loguearse</button>
             </form>
-            <p class="texto_registro">No estás registrado? <a href="registro.html">¡Regístrate aquí!</a></p>
+            <div>
+                <p class="texto_registro">No estás registrado? <a href="registro.html">¡Regístrate aquí!</a></p>
+            </div>
+            <div class="ventajas">
+                <p> Averiguá las ventajas de hacerte Socio haciendo click <a href="registro.html">aquí</a> </p>
+            <div>
         </div>
     `;
 
