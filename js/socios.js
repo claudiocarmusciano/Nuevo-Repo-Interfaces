@@ -36,26 +36,32 @@ function socios() {
                 <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
                 <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
             </div>
+            <div id="info-container" class="info-container"></div>
         `;
     
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoMenuUsuarios;
 
+        const infoContainer = document.getElementById('info-container');
+
         const btnCuotas = document.getElementById('btnCuotas');
         btnCuotas.addEventListener('click', function (e) {
             e.preventDefault();
+            infoContainer.style.display = 'block';
             cuotas();
         });
 
         const btnBeneficios = document.getElementById('btnBeneficios');
         btnBeneficios.addEventListener('click', function (e) {
             e.preventDefault();
+            infoContainer.style.display = 'block';
             mostrarBeneficios();
         });
 
         const btnSugerencias = document.getElementById('btnSugerencias');
         btnSugerencias.addEventListener('click', function (e) {
             e.preventDefault();
+            infoContainer.style.display = 'block';
             mostrarSugerencias();
         });
     }
@@ -63,11 +69,10 @@ function socios() {
 }
 
 function cuotas() {
-    const centralBody = document.getElementById("central-body");
+    const centralBody = document.getElementById("info-container");
     const textoMenuCuotas = `
         <div class="center">
-            <div class="titulo">Socios - Cuotas</div>
-            <div id="info-container">
+            <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Información de las cuotas del socio:</h2>
                 <table class="tabla-informacion">
                     <thead>
@@ -83,87 +88,90 @@ function cuotas() {
                         <tr>
                             <td class="dato-tabla">1</td>
                             <td class="dato-tabla">Enero 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de febrero de 2023</td>
-                            <td class="dato-tabla">05 de febrero de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/02/2023</td>
+                            <td class="dato-tabla">05/02/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">2</td>
                             <td class="dato-tabla">Febrero 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de marzo de 2023</td>
-                            <td class="dato-tabla">10 de marzo de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/03/2023</td>
+                            <td class="dato-tabla">10/03/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">3</td>
                             <td class="dato-tabla">Marzo 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de abril de 2023</td>
-                            <td class="dato-tabla">04 de abril de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/04/2023</td>
+                            <td class="dato-tabla">04/04/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">4</td>
                             <td class="dato-tabla">Abril 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de mayo de 2023</td>
-                            <td class="dato-tabla">09 de mayo de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/05/2023</td>
+                            <td class="dato-tabla">09/05/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">5</td>
                             <td class="dato-tabla">Mayo 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de junio de 2023</td>
-                            <td class="dato-tabla">05 de junio de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/06/2023</td>
+                            <td class="dato-tabla">05/06/2023</td>
                         </tr>
                         <tr>
                             <td class="dato-tabla">6</td>
                             <td class="dato-tabla">Junio 2023</td>
-                            <td class="dato-tabla">$100</td>
-                            <td class="dato-tabla">10 de julio de 2023</td>
+                            <td class="dato-tabla-monto">$ 1.000</td>
+                            <td class="dato-tabla">10/07/2023</td>
                             <td class="dato-tabla">Aún no pagada</td>
                         </tr>
                     </tbody>
                 </table>
+                <br>
                 <p class="texto-informacion">Estado: Al día</p>
-                <p class="texto-informacion">Próximo vencimiento de la cuota: 10 de agosto de 2023</p>
+                <p class="texto-informacion">Próximo vencimiento de la cuota: 10/08/2023</p>
             </div>
+           
     `;
-
+    
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoMenuCuotas;
 }
 
 function mostrarBeneficios() {
-    const centralBody = document.getElementById("central-body");
+    const centralBody = document.getElementById("info-container");
     const textoMenuBeneficios = `
     <div class="center">
-            <div class="titulo">Socios - Beneficios</div>
             <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Beneficios para socios:</h2>
                 <ul class="lista-beneficios">
-                    <strong>Descuentos en tiendas</strong> 
-                    <p>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor que incluyen artículos deportivos, ropa, accesorios y más.</p>
+                    <strong>Descuentos en tiendas y espectaculos</strong> 
+                    <p>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
+                    <br>
                     <strong>Acceso a áreas exclusivas del club</strong> 
                     <p>Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
+                    <br>
                     <strong>Participación en eventos y torneos especiales</strong> 
                     <p>Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</p>
+                    <br>
                     <strong>Ofertas especiales en actividades deportivas</strong> 
                     <p>Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</p>
-                    <strong>Descuentos en entradas para espectáculos</strong> 
-                    <p>Disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club o en asociación con él.</p>
+                    <br>
                 </ul>
             </div>
         </div>
+        
     `;
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoMenuBeneficios;
 }
 
 function mostrarSugerencias() {
-    const centralBody = document.getElementById("central-body");
+    const centralBody = document.getElementById("info-container");
     const textoMenuSugerencias = `
     <div class="center">
-            <div class="titulo">Socios - Sugerencias</div>
             <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Sugerencias</h2>
                 <h4>Escribe tu sugerencia:</h4>
@@ -173,6 +181,7 @@ function mostrarSugerencias() {
                 </div>
             </div>
     </div>
+    
     `;
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoMenuSugerencias;
