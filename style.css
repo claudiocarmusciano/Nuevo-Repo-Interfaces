@@ -334,6 +334,11 @@ button:hover {
 .image_container_taekondo,
 .image_container_voley,
 .image_container_zumba {
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .tabla-informacion {
@@ -494,4 +499,69 @@ button:hover {
     margin-left: 15%;
     border-radius: 5px; 
     position: absolute;
+}
+
+
+.image_container_acrobacia {
+    background-image: url("images/actividades/acrobacia.jpg");
+}
+
+.image_container_ajedrez {
+    background-image: url("images/actividades/ajedrez.jpg");
+}
+
+.image_container_badmintong {
+    background-image: url("images/actividades/badminton.jpg");
+}
+
+.image_container_baile_Gym {
+    background-image: url("images/actividades/baileGym.jpg");
+}
+
+.image_container_basquet {
+    background-image: url("images/actividades/basquet.jpg");
+}
+
+.image_container_deportiva {
+    background-image: url("images/actividades/deportiva.jpg");
+}
+
+.image_container_folklore {
+    background-image: url("images/actividades/folklore.jpg");
+}
+
+.image_container_gym_adulto {
+    background-image: url("images/actividades/gymAdultos.jpg");
+}
+
+.image_container_infantil {
+    background-image: url("images/actividades/infantil.jpg");
+}
+
+.image_container_taekondo {
+    background-image: url("images/actividades/taekwondo.jpg");
+}
+
+.image_container_voley {
+    background-image: url("images/actividades/voley.jpg");
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5%;
+}
+
+.images img {
+    padding: 0.2%;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.image_container_zumba {
+    background-image: url("images/actividades/zumba.jpg");
 }
