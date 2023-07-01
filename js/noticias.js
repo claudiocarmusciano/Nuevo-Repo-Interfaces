@@ -12,7 +12,7 @@ function noticias() {
         </div>
     </div>
     
-    <div class="sector" id="sector">
+    <div class="sector">
         <h3 class="textoH3"> Nueva fecha de Intermedia </h3>
         <h5> En los gimnasios de Racing y Mariano Moreno se completó la doble fecha de vóleibol. </h5>
 
@@ -31,6 +31,8 @@ function noticias() {
             Costa Sud 2 – 0 Independiente VAF Negro (25/16 y 25/18)<br>
             Municipalidad Benito Juárez 2 – 1 Independiente VAF Negro (23/25 25/16 y 15/6)
         </p>
+        <br>
+        <br>
 
         <h3 class="textoH3"> Entrega de Escrituras en la S. F. Mariano Moreno </h3>
         <h5> Se detalló que se entregarán en total 511 escrituras </h5>
@@ -45,6 +47,8 @@ function noticias() {
         Se detalló que se entregarán en total 511 escrituras, de las cuales 213 corresponden al Instituto 
         de la Vivienda, mientras que los 298 restantes se enmarcan en la Ley 10.830.
         </p>
+        <br>
+        <br>
 
         <h3 class="textoH3"> La S. F. Mariano Moreno trabaja en su nuevo predio </h3>
         <h5> Veyrand se mostró agradecido con las autoridades del Municipio, pilar importante 
