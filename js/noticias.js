@@ -2,8 +2,17 @@ function noticias() {
 
     const centralBody = document.getElementById("central-body");
     const textoBotonNoticias = `
-    <div class="titulo">Noticias</div>
-    <div class="sector">
+    <div class="titulo">
+        <div>
+            <p> Noticias </p>
+        </div>
+        <div class="busqueda"> 
+            <label> Buscar texto: </label>
+            <input type="text" id="searchInput" placeholder="Buscar...">
+        </div>
+    </div>
+    
+    <div class="sector" id="sector">
         <h3 class="textoH3"> Nueva fecha de Intermedia </h3>
         <h5> En los gimnasios de Racing y Mariano Moreno se completó la doble fecha de vóleibol. </h5>
 
@@ -62,4 +71,40 @@ function noticias() {
 
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonNoticias;
+
+    const searchInput = document.getElementById('searchInput');
+    const contentDiv = document.getElementById('sector');
+
+    searchInput.addEventListener('input', function() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const paragraphs = contentDiv.getElementsByTagName('p, h3, h5');
+      
+        for (let i = 0; i < paragraphs.length; i++) {
+          const paragraph = paragraphs[i];
+          const text = paragraph.innerText.toLowerCase();
+          const words = text.split(' ');
+      
+          for (let j = 0; j < words.length; j++) {
+            const word = words[j];
+            const span = document.createElement('span');
+            
+            if (word.includes(searchTerm)) {
+              span.className = 'highlight';
+            }
+            
+            span.innerText = word + ' ';
+            paragraph.appendChild(span);
+          }
+        }
+        
+        scrollToHighlighted();
+      });
+      
+      function scrollToHighlighted() {
+        const highlights = document.getElementsByClassName('highlight');
+        
+        if (highlights.length > 0) {
+          highlights[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
 }
