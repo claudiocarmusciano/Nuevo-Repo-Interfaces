@@ -3,11 +3,16 @@
 }
 
 .container {
-    max-width: 90%; /* Establece el ancho máximo que deseas */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 90%;
+    /* Establece el ancho máximo que deseas */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
 }
-  
-p, h2, h3, h5 {
+
+p,
+h2,
+h3,
+h5 {
     color: white;
     font-family: Arial;
 }
@@ -18,9 +23,12 @@ p {
     padding: 10px;
 }
 
+
+/*
 .central-body img {
-    border-radius: 10px;
+     border-radius: 10px;
 }
+*/
 
 .header {
     /* background-color: rgb(12, 232, 248);
@@ -52,8 +60,6 @@ h1 {
 .escudo {
     width: 15%;
 }
-
-
 
 .logo-container .escudo img {
     max-width: 90%;
@@ -132,6 +138,7 @@ button:hover {
     font-family: Arial;
     font-size: 1.7vw;
 }
+
 .sidebar2 div {
     padding: 1%;
 }
@@ -144,6 +151,7 @@ button:hover {
     background-size: cover;
     background-position: center center;
 }
+
 
 /* .titulo {
     flex-direction: column;
@@ -162,7 +170,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .titulo div p {
@@ -249,15 +256,33 @@ button:hover {
     margin: 3%;
     height: 80%;
     width: 90%;
-    background-color:rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
-    padding: 3% ;
+    padding: 3%;
 }
 
-.sector, p, h2, h3, h5 , h4 {
+.sector,
+p,
+h2,
+h3,
+h5,
+h4 {
     color: black;
     font-family: Arial;
-    padding: 5px 10px ;
+    padding: 30px 10px;
+    text-align-last: center;
+}
+
+.box-actividad .sector,
+p,
+h2,
+h3,
+h5,
+h4 {
+    color: black;
+    font-family: Arial;
+    padding: 30px 10px;
+    text-align-last: center;
 }
 
 .tituloActividad {
@@ -276,11 +301,13 @@ button:hover {
     padding-top: 2%;
 }
 
+
 /* INFORMACION DE CUOTAS DEL SOCIO */
 
 .body {
     font-size: 18px;
 }
+
 
 /* .box_actividad {
     max-width: 100%;
@@ -303,13 +330,14 @@ button:hover {
 #sector {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: 10px;
 }
 
 #sector div {
-    padding: 20px;   
+    padding: 20px;
 }
+
 
 /* button .image_actividad {
     padding: 10px;
@@ -322,6 +350,8 @@ button:hover {
     border: black solid 0.1px;
 }
 
+
+/*
 .image_container_acrobacia,
 .image_container_ajedrez,
 .image_container_badmintong,
@@ -340,13 +370,15 @@ button:hover {
     background-size: cover;
     background-position: center center;
 }
+*/
 
 .tabla-informacion {
     border-collapse: collapse;
     width: 100%;
 }
 
-.encabezado-tabla, .dato-tabla {
+.encabezado-tabla,
+.dato-tabla {
     border: 1px solid #ccc;
     padding: 7px;
 }
@@ -367,7 +399,6 @@ button:hover {
 .texto-informacion {
     font-size: 16px;
 }
-
 
 .contenedor-informacion .lista-beneficios strong {
     font-weight: bold;
@@ -415,12 +446,14 @@ button:hover {
     padding: 5px;
     margin-top: 30px;
     font-family: Tahoma;
-    font-size:larger;
+    font-size: larger;
     text-decoration: none;
     font-weight: bold;
 }
 
+
 /* FORMULARIO LOGIN SOCIOS */
+
 
 /* .login-form {
     background-color: white;
@@ -497,11 +530,12 @@ button:hover {
     height: 310px;
     margin-top: -1%;
     margin-left: 15%;
-    border-radius: 5px; 
+    border-radius: 5px;
     position: absolute;
 }
 
 
+/*
 .image_container_acrobacia {
     background-image: url("images/actividades/acrobacia.jpg");
 }
@@ -519,7 +553,7 @@ button:hover {
 }
 
 .image_container_basquet {
-    background-image: url("images/actividades/basquet.jpg");
+    background-image: url("images/actividades/bannerBasquet.jpeg");
 }
 
 .image_container_deportiva {
@@ -545,6 +579,7 @@ button:hover {
 .image_container_voley {
     background-image: url("images/actividades/voley.jpg");
 }
+*/
 
 .images {
     display: flex;
@@ -564,4 +599,15 @@ button:hover {
 
 .image_container_zumba {
     background-image: url("images/actividades/zumba.jpg");
+}
+
+.banner {
+    width: 100%;
+}
+
+.box_actividad {
+    background-color: lightyellow;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }

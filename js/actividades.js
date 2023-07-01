@@ -67,6 +67,10 @@ function acrobacia() {
 
     <div class="box_actividad">
 
+        <div>
+            <img class= "banner" src="images/actividades/bannerAcrobacia.jpeg" alt="">
+        </div>
+
         <div class="titulo">Acrobacia Aerea en Telas</div>
 
             <div class="sector">
@@ -97,6 +101,10 @@ function ajedrez() {
 
             <div class="box_actividad">
 
+            <div>
+                <img class= "banner" src="images/actividades/bannerAjedrez.jpeg" alt="">
+            </div>
+
                 <div class="titulo">Ajedrez</div>
 
                     <div class="sector">
@@ -124,11 +132,15 @@ function badmington() {
 
     const centralBody = document.getElementById("central-body");
     const textoBotonBadmington = `
-        <div class="image_container_badmintong">
+        <div class="image_container_badminton">
 
             <div class="box_actividad">
 
-                <div class="titulo">Badmington</div>
+            <div>
+                <img class= "banner" src="images/actividades/bannerBadminton.jpeg" alt="">
+            </div>
+
+                <div class="titulo">Badminton</div>
 
                     <div class="sector">
 
@@ -161,6 +173,10 @@ function baileGym() {
 
             <div class="box_actividad">
         
+            <div>
+                <img class= "banner" src="images/actividades/bannerBaileGym.jpeg" alt="">
+            </div>
+
                 <div class="titulo">Baile y Gym</div>
 
                     <div class="sector">
@@ -191,29 +207,34 @@ function basquet() {
         <div class="image_container_basquet">
             <div class="box_actividad">
 
+                <div>
+                    <img class= "banner" src="images/actividades/bannerBasquet.jpeg" alt="">
+                </div>
+                    
                 <div class="titulo">Basquet</div>
 
                     <div class="sector">
 
-                        <h1 class="tituloActividad">4 a 5 años - Pre escolar</h1>
+                        
+                        <div>
+                            <h1 class="tituloActividad">4 a 5 años - Pre escolar</h1>
 
-                        <h2 class="tituloActividad">Martes y Jueves de 18:00 a 19:00 hs</h2>
+                            <h2 class="tituloActividad">Martes y Jueves de 18:00 a 19:00 hs</h2>
 
-                        <h1 class="tituloActividad">6 a 9 años </h1>
+                            <h1 class="tituloActividad">6 a 9 años </h1>
 
-                        <h2 class="tituloActividad">Martes y Jueves de 18:00 a 19:00 hs</h2>
+                            <h2 class="tituloActividad">Martes y Jueves de 18:00 a 19:00 hs</h2>
 
-                        <h1 class="tituloActividad">12 a 16/17 años </h1>
+                            <h1 class="tituloActividad">12 a 16/17 años </h1>
 
-                        <h2 class="tituloActividad">Martes y Jueves de 19:00 a 20:00 hs</h2>
+                            <h2 class="tituloActividad">Martes y Jueves de 19:00 a 20:00 hs</h2>
+
+                            <h3 class="tituloActividad">Profesora : Laureana Cabello</h3>
+                            <h3 class="tituloActividad">Profesor :Tito Herrera</h3>
 
 
-                        <h3 class="tituloActividad">Profesora : Laureana Cabello</h3>
-                        <h3 class="tituloActividad">Profesor :Tito Herrera</h3>
-
-
-                        <button>Contactenos</button>
-
+                            <div><button id="btnContacto" class="normal">Contacto</button></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,6 +252,10 @@ function deportiva() {
         <div class="image_container_deportiva">
 
             <div class="box_actividad">
+
+            <div>
+                <img class= "banner" src="images/actividades/bannerDeportiva.jpeg" alt="">
+            </div>
 
                 <div class="titulo">Gimnasia Deportiva</div>
 
@@ -263,6 +288,10 @@ function folklore() {
 
             <div class="box_actividad">
 
+            <div>
+                <img class= "banner" src="images/actividades/bannerFolklore.jpeg" alt="">
+            </div>  
+            
                 <div class="titulo">Folklore</div>
 
                     <div class="sector">
@@ -293,6 +322,10 @@ function gymAdultos() {
         <div class="image_container_gym_adulto">
 
             <div class="box_actividad">
+
+            <div>
+                <img class= "banner" src="images/actividades/bannerGymAdultos.jpeg" alt="">
+            </div>
 
                  <div class="titulo">Gym Adulto</div>
 
@@ -326,6 +359,10 @@ function infantil() {
 
             <div class="box_actividad">
 
+                <div>
+                    <img class= "banner" src="images/actividades/bannerInfantil.jpeg" alt="">
+                </div>
+
                 <div class="titulo">Educacion Física Infantil</div>
 
                     <div class="sector">
@@ -357,6 +394,10 @@ function taekwondo() {
 
             <div class="box_actividad">
 
+                <div>
+                    <img class= "banner" src="images/actividades/bannerTaekondo.jpeg" alt="">
+                </div>
+
                 <div class="titulo">Taekwondo</div>
 
                     <div class="sector">
@@ -384,6 +425,10 @@ function voley() {
         <div class="image_container_voley">
 
             <div class="box_actividad">
+
+            <div>
+                <img class= "banner" src="images/actividades/bannerVoley.jpeg" alt="">
+            </div>
 
                 <div class="titulo">Voley</div>
 
@@ -504,6 +549,10 @@ function zumba() {
         <div class="image_container_zumba">
 
             <div class="box_actividad">
+
+                <div>
+                    <img class= "banner" src="images/actividades/bannerZumba.jpeg" alt="">
+                </div>
 
                 <div class="titulo">Zumba</div>
 
