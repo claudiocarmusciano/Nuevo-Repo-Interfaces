@@ -2,10 +2,9 @@ function actividades() {
 
     const centralBody = document.getElementById("central-body");
     const textoBotonActividades = `         
-    <div class="box_actividad">
-
-    <div class="titulo" "box_actividad">Actividades</div>
-        <div class="sector">
+   
+    <div class="titulo">Actividades</div>
+        <div class="sector" id="sector">
             
             <button onclick="acrobacia()"><img src="images/actividades/acrobacia.jpg" alt="" class="image_actividad"></button>
 
@@ -31,7 +30,6 @@ function actividades() {
 
             <button onclick="zumba()"><img src="images/actividades/zumba.jpg" alt="" class="image_actividad"></button>
 
-        </div>    
     </div>`;
 
     centralBody.innerHTML = "";

@@ -71,17 +71,8 @@ h1 {
     background-color: green;
 }
 
-/* .redes-container div {
-    justify-content: center;
-} */
-
 .redes-container .logos {
     padding: 0px 5px;
-}
-
-.logos img{
-    /* max-width: 90%;
-    height: auto; */
 }
 
 .central {
@@ -173,10 +164,6 @@ button:hover {
     justify-content: space-between;
 
 }
-
-/* .titulo .busqueda {
-    font-size: 1.2em;
-} */
 
 .titulo div p {
     background-color: green;
@@ -273,30 +260,9 @@ button:hover {
     padding: 5px 10px ;
 }
 
-/* .sector,
-p,
-h1,
-h2,
-h3,
-h5 {
-    color: white;
-    padding: 0px 10px;
-    text-align: center;
-} */
-
 .tituloActividad {
     color: black;
 }
-
-
-/*
-.sector
-h2,
-h4,
-h6 {
-    color: black;
-}
-*/
 
 .textos-sector p {
     font-size: 1.2em;
@@ -322,10 +288,10 @@ h6 {
     flex-grow: 1;
 }
 
-.box_actividad {
-    /* articulo */
-    /*display: inline-block;
-    display: table-cell;*/
+/* .box_actividad {
+    max-width: 100%;
+    max-height: 90%;
+    overflow: auto;
     flex-grow: 3;
     vertical-align: middle;
     align-items: space-around;
@@ -334,12 +300,25 @@ h6 {
     flex-wrap: wrap;
     display: inline-block;
     margin: 40px auto;
+} */
+
+.sector button {
+    padding: 10px;
 }
+
+#sector {
+    padding: 20px;
+}
+
+/* button .image_actividad {
+    padding: 10px;
+} */
 
 .image_actividad {
     margin: 20px;
     height: 200px;
-    border: black solid 1px;
+    border-radius: 5px;
+    border: black solid 0.1px;
 }
 
 .image_container_acrobacia,
