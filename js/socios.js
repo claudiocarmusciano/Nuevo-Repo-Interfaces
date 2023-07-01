@@ -41,26 +41,32 @@ function socios() {
                 <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
                 <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
             </div>
+            <div id="info-container" class="info-container"></div>
         `;
     
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoMenuUsuarios;
 
+        const infoContainer = document.getElementById('info-container');
+
         const btnCuotas = document.getElementById('btnCuotas');
         btnCuotas.addEventListener('click', function (e) {
             e.preventDefault();
+            infoContainer.style.display = 'block';
             cuotas();
         });
 
         const btnBeneficios = document.getElementById('btnBeneficios');
         btnBeneficios.addEventListener('click', function (e) {
             e.preventDefault();
+            infoContainer.style.display = 'block';
             mostrarBeneficios();
         });
 
         const btnSugerencias = document.getElementById('btnSugerencias');
         btnSugerencias.addEventListener('click', function (e) {
             e.preventDefault();
+            infoContainer.style.display = 'block';
             mostrarSugerencias();
         });
     }
@@ -68,11 +74,10 @@ function socios() {
 }
 
 function cuotas() {
-    const centralBody = document.getElementById("central-body");
+    const centralBody = document.getElementById("info-container");
     const textoMenuCuotas = `
         <div class="center">
-            <div class="titulo">Socios - Cuotas</div>
-            <div id="info-container">
+            <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Información de las cuotas del socio:</h2>
                 <table class="tabla-informacion">
                     <thead>
@@ -133,11 +138,7 @@ function cuotas() {
                 <p class="texto-informacion">Estado: Al día</p>
                 <p class="texto-informacion">Próximo vencimiento de la cuota: 10/08/2023</p>
             </div>
-            <div class="sidebar2">
-                <div><button id="btnCuotas" class="normal">Cuotas</button></div>
-                <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
-                <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
-            </div>
+           
     `;
     
     centralBody.innerHTML = "";
@@ -145,10 +146,9 @@ function cuotas() {
 }
 
 function mostrarBeneficios() {
-    const centralBody = document.getElementById("central-body");
+    const centralBody = document.getElementById("info-container");
     const textoMenuBeneficios = `
     <div class="center">
-            <div class="titulo">Socios - Beneficios</div>
             <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Beneficios para socios:</h2>
                 <ul class="lista-beneficios">
@@ -167,21 +167,16 @@ function mostrarBeneficios() {
                 </ul>
             </div>
         </div>
-        <div class="sidebar2">
-                <div><button id="btnCuotas" class="normal">Cuotas</button></div>
-                <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
-                <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
-        </div>
+        
     `;
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoMenuBeneficios;
 }
 
 function mostrarSugerencias() {
-    const centralBody = document.getElementById("central-body");
+    const centralBody = document.getElementById("info-container");
     const textoMenuSugerencias = `
     <div class="center">
-            <div class="titulo">Socios - Sugerencias</div>
             <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Sugerencias</h2>
                 <h4>Escribe tu sugerencia:</h4>
@@ -191,11 +186,7 @@ function mostrarSugerencias() {
                 </div>
             </div>
     </div>
-    <div class="sidebar2">
-                <div><button id="btnCuotas" class="normal">Cuotas</button></div>
-                <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
-                <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
-    </div>
+    
     `;
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoMenuSugerencias;
