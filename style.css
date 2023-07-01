@@ -195,8 +195,18 @@ button:hover {
     border-radius: 5px;
     font-size: 1.5vw;
     width: 50%;
-    padding: 15px;
+    padding-top: 30px;
     font-family: Arial;
+}
+
+.login-form div {
+    padding-top: 20px;
+    /* padding-bottom: 30px; */
+}
+
+.login-form .ventajas p {
+    font-size: 80%;
+    padding-bottom: 30px;
 }
 
 .login-form p {
