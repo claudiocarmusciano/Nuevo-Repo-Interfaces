@@ -3,8 +3,8 @@ function contacto() {
     const centralBody = document.getElementById("central-body");
     const textoBotonContacto = `
         <div class="titulo">Contacto</div>
-        <div class="sector">
-            <div class="textos-sector">
+        <div class="sector-contacto">
+            <div class="textos-sector-contacto">
                 <h2 class="textoH3"> CONTACTANOS </h2><br>
                 <h4> Dirección: </h4>
                 <p> Av Sarmiento 3093, Olavarría, Provincia de Buenos Aires </p><br>

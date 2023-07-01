@@ -127,10 +127,11 @@ button:hover {
 }
 
 .sidebar2 {
-    margin-left: 5px;
+    margin-left: 3%;
     width: 17%;
     height: 40vh;
     background-color: green;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -143,6 +144,16 @@ button:hover {
     padding: 1%;
 }
 
+.sidebar2 button {
+    padding-top: 5%;
+    margin-top: 10px
+}
+
+.sidebar2-infocontainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .central-body {
     width: 85%;
     height: 90vh;
@@ -152,11 +163,6 @@ button:hover {
     background-position: center center;
 }
 
-
-/* .titulo {
-    flex-direction: column;
-    width: 80vw;
-} */
 
 .titulo {
     background-color: green;
@@ -170,6 +176,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .titulo div p {
@@ -204,6 +211,7 @@ button:hover {
     width: 50%;
     padding-top: 30px;
     font-family: Arial;
+    height: auto;
 }
 
 .login-form div {
@@ -271,6 +279,50 @@ button:hover {
     padding: 3%;
 }
 
+.sector-galeria {
+    max-width: 100%;
+    max-height: 90%;
+    overflow: auto;
+    margin: 3%;
+    height: 70%;
+    width: 90%;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+/* .sector-galeria .images img {
+    justify-content: space-around;
+} */
+
+.sector-noticia {
+    max-width: 100%;
+    max-height: 90%;
+    overflow: auto;
+    margin: 3%;
+    height: 70%;
+    width: 90%;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.sector-noticia p {
+    text-align-last: left;
+}
+
+.sector-noticia h3 {
+    text-align-last: left;
+    padding-bottom: 0px;
+    font-size: 150%;
+}
+
+.sector-noticia h5 {
+    padding-top: 0px;
+    text-align-last: left;
+}
+
+
 .sector,
 p,
 h2,
@@ -279,16 +331,29 @@ h5,
 h4 {
     color: black;
     font-family: Arial;
-    padding: 30px 10px;
+    padding: 10px 10px;
     text-align-last: center;
 }
 
-.box-actividad .sector,
+.sector-contacto,
 p,
 h2,
 h3,
 h5,
 h4 {
+    color: black;
+    font-family: Arial;
+    padding: 0px 10px;
+    text-align-last: center;
+}
+
+.box_actividad .sector,
+p,
+h2,
+h3,
+h5,
+h4 {
+    /* background-color: rgb(255, 255, 255, 0.5); */
     color: black;
     font-family: Arial;
     padding: 30px 10px;
@@ -301,10 +366,33 @@ h4 {
 
 .textos-sector p {
     font-size: 1.2em;
+    text-align-last: center;
+
+}
+
+.textos-sector-contacto {
+    font-size: 1.2em;
+}
+
+.textos-sector-contacto p, h2, h4 {
+    padding: 0px;
+    text-align: left;
 }
 
 .imgNoticia1 {
     padding: 10px;
+}
+
+.sector-contacto {
+    max-width: 90%;
+    max-height: 80%;
+    overflow: auto;
+    margin: 3%;
+    height: 70%;
+    width: 87%;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 3%;
 }
 
 .textoH3 {
@@ -361,6 +449,7 @@ h4 {
 }
 
 
+
 /*
 .image_container_acrobacia,
 .image_container_ajedrez,
@@ -391,6 +480,13 @@ h4 {
 .dato-tabla {
     border: 1px solid #ccc;
     padding: 7px;
+    text-align: center;
+}
+
+.dato-tabla-monto {
+    border: 1px solid #ccc;
+    padding: 7px;
+    text-align: right;
 }
 
 .encabezado-tabla {
@@ -427,6 +523,7 @@ h4 {
 }
 
 #sugerencia {
+    margin-top: 5%;
     width: 100%;
     height: 50%;
 }
@@ -435,14 +532,18 @@ h4 {
     margin-top: 10px;
 }
 
-.sidebar2 ul {
+#enviar-sugerencia:hover {
+    background-color: green;
+}
+
+/* .sidebar2 ul {
     list-style: none;
     padding: 0;
     margin: 0;
     background-color: rgb(4, 130, 4);
-}
+} */
 
-.sidebar2 li {
+/* .sidebar2 li {
     text-align: center;
     display: flex;
     align-items: center;
@@ -459,7 +560,7 @@ h4 {
     font-size: larger;
     text-decoration: none;
     font-weight: bold;
-}
+} */
 
 
 /* FORMULARIO LOGIN SOCIOS */
@@ -537,15 +638,27 @@ h4 {
 }
 
 .info-container {
+    max-width: 48%;
+    max-height: 90%;
+    overflow: auto;
     background-color: white;
     border: 4px solid black;
     padding: 40px;
-    width: 850px;
-    height: 310px;
-    margin-top: -10%;
+    width: 48%;
+    height: 50%;
+    /* margin-top: -10%; */
     margin-left: 18%;
     border-radius: 5px; 
     position: absolute;
+}
+
+.info-container p {
+    padding-top: 0px;
+    text-align-last: left;
+}
+
+.info-container strong {
+    padding: 0px 10px;
 }
 
 
@@ -603,7 +716,7 @@ h4 {
 }
 
 .images img {
-    padding: 0.2%;
+    padding: 2%;
 }
 
 .highlight {
@@ -624,4 +737,12 @@ h4 {
     background-size: cover;
     width: 100%;
     height: 100%;
+}
+
+#titulo-noticias {
+    background-color: green;
+}
+
+#titulo-noticias p {
+    padding: 0px;
 }

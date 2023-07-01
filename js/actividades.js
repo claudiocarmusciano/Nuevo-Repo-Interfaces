@@ -217,9 +217,6 @@ function basquet() {
 
                         
                         <div>
-                            <h1 class="tituloActividad">4 a 5 años - Pre escolar</h1>
-
-                            <h2 class="tituloActividad">Martes y Jueves de 18:00 a 19:00 hs</h2>
 
                             <h1 class="tituloActividad">6 a 9 años </h1>
 

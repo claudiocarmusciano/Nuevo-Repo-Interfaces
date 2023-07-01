@@ -3,7 +3,7 @@ function galeria() {
     const centralBody = document.getElementById("central-body");
     const textoBotonGaleria = `
     <div class="titulo">Galería de fotos</div>
-    <div class="sector">
+    <div class="sector-galeria">
         <div class="images">
             <img src="images/galeria/img01.jpg" alt="">
             <img src="images/galeria/img02.jpg" alt="">

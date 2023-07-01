@@ -2,7 +2,7 @@ function noticias() {
 
     const centralBody = document.getElementById("central-body");
     const textoBotonNoticias = `
-    <div class="titulo">
+    <div class="titulo" id="titulo-noticias">
         <div>
             <p> Noticias </p>
         </div>
@@ -12,7 +12,7 @@ function noticias() {
         </div>
     </div>
     
-    <div class="sector">
+    <div class="sector-noticia">
         <h3 class="textoH3"> Nueva fecha de Intermedia </h3>
         <h5> En los gimnasios de Racing y Mariano Moreno se completó la doble fecha de vóleibol. </h5>
 

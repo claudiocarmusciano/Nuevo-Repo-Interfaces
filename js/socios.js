@@ -36,12 +36,14 @@ function socios() {
         const centralBody = document.getElementById("central-body");
         const textoMenuUsuarios = `
             <div class="titulo">Socios</div>
-            <div class="sidebar2">
-                <div><button id="btnCuotas" class="normal">Cuotas</button></div>
-                <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
-                <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
+            <div class="sidebar2-infocontainer">
+                <div class="sidebar2">
+                    <div><button id="btnCuotas" class="normal">Cuotas</button></div>
+                    <div><button id="btnBeneficios" class="normal">Beneficios</button></div>
+                    <div><button id="btnSugerencias" class="normal">Sugerencias</button></div>
+                </div>
+                <div id="info-container" class="info-container"></div>
             </div>
-            <div id="info-container" class="info-container"></div>
         `;
     
         centralBody.innerHTML = "";
@@ -149,24 +151,24 @@ function mostrarBeneficios() {
     const centralBody = document.getElementById("info-container");
     const textoMenuBeneficios = `
     <div class="center">
-            <div id="info-container" class="contenedor-informacion">
-                <h2 class="titulo-informacion">Beneficios para socios:</h2>
-                <ul class="lista-beneficios">
-                    <strong>Descuentos en tiendas y espectaculos</strong> 
-                    <p>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
-                    <br>
-                    <strong>Acceso a áreas exclusivas del club</strong> 
-                    <p>Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
-                    <br>
-                    <strong>Participación en eventos y torneos especiales</strong> 
-                    <p>Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</p>
-                    <br>
-                    <strong>Ofertas especiales en actividades deportivas</strong> 
-                    <p>Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</p>
-                    <br>
-                </ul>
-            </div>
+        <div id="info-container" class="contenedor-informacion">
+            <h2 class="titulo-informacion">Beneficios para socios:</h2>
+            <ul class="lista-beneficios">
+                <strong>Descuentos en tiendas y espectaculos</strong> 
+                <p>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
+                <br>
+                <strong>Acceso a áreas exclusivas del club</strong> 
+                <p>Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
+                <br>
+                <strong>Participación en eventos y torneos especiales</strong> 
+                <p>Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</p>
+                <br>
+                <strong>Ofertas especiales en actividades deportivas</strong> 
+                <p>Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</p>
+                <br>
+            </ul>
         </div>
+    </div>
         
     `;
     centralBody.innerHTML = "";
