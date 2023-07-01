@@ -2,9 +2,12 @@
     margin: 0;
 }
 
-p,
-h3,
-h5 {
+.container {
+    max-width: 90%; /* Establece el ancho máximo que deseas */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+  
+p, h2, h3, h5 {
     color: white;
     font-family: Arial;
 }
@@ -32,7 +35,7 @@ p {
 h1 {
     font-family: Impact;
     color: white;
-    font-size: 3.5vw;
+    font-size: 150%;
     margin-left: 10px;
 }
 
@@ -50,36 +53,35 @@ h1 {
     width: 15%;
 }
 
-.titulo {
-    width: 80vw;
-}
+
 
 .logo-container .escudo img {
     max-width: 90%;
     height: 90%;
     padding: 10px;
+    margin-left: 27%;
 }
 
 .redes-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 5px;
+    justify-content: flex-end;
+    padding-right: 15px;
     width: 20%;
     background-color: green;
 }
 
-.redes-container div {
+/* .redes-container div {
     justify-content: center;
-}
+} */
 
 .redes-container .logos {
-    justify-content: flex-start;
+    padding: 0px 5px;
 }
 
-.logos img {
-    max-width: 90%;
-    height: auto;
+.logos img{
+    /* max-width: 90%;
+    height: auto; */
 }
 
 .central {
@@ -88,21 +90,19 @@ h1 {
 }
 
 .side-bar {
-    width: 20%;
+    width: 17%;
     height: 90vh;
     background-color: green;
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    align-items: top;
     text-align: center;
     color: white;
     font-family: Arial;
-    font-size: 2vw;
+    font-size: 1.7vw;
 }
 
 .side-bar div {
-    padding: 10%;
+    padding: 1%;
 }
 
 .resaltado {
@@ -129,6 +129,22 @@ button:hover {
     border: 1px;
 }
 
+.sidebar2 {
+    margin-left: 5px;
+    width: 17%;
+    height: 40vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-size: 1.7vw;
+}
+.sidebar2 div {
+    padding: 1%;
+}
+
 .central-body {
     width: 85%;
     height: 90vh;
@@ -137,6 +153,11 @@ button:hover {
     background-size: cover;
     background-position: center center;
 }
+
+/* .titulo {
+    flex-direction: column;
+    width: 80vw;
+} */
 
 .titulo {
     background-color: green;
@@ -147,17 +168,33 @@ button:hover {
     padding: 15px;
     width: 90%;
     margin: 3%;
-    /* font-weight: bold;
-    padding: 15px;
-    border-radius: 5px; 
-    font-weight: bold; 
-    font-family: Tahoma;
-    font-size: 20px;
-    width: 90%;
-    height: 2%;
     display: flex;
-    align-items: center;
-    position: absolute;  */
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* .titulo .busqueda {
+    font-size: 1.2em;
+} */
+
+.titulo div p {
+    background-color: green;
+    color: white;
+    font-family: Arial;
+    font-size: 2vw;
+}
+
+.titulo .busqueda label {
+    font-size: 1.5vw;
+    font-family: Arial;
+    color: white;
+    background-color: green;
+}
+
+.titulo .busqueda input {
+    font-size: 1.5vw;
+    font-family: Arial;
 }
 
 .login-form {
@@ -219,15 +256,24 @@ button:hover {
 }
 
 .sector {
+    max-width: 100%;
+    max-height: 90%;
+    overflow: auto;
     margin: 3%;
-    height: 400px;
+    height: 80%;
     width: 90%;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color:rgb(255, 255, 255, 0.8);
     border-radius: 10px;
-    padding: 3%;
+    padding: 3% ;
 }
 
-.sector,
+.sector, p, h2, h3, h5 , h4 {
+    color: black;
+    font-family: Arial;
+    padding: 5px 10px ;
+}
+
+/* .sector,
 p,
 h1,
 h2,
@@ -236,7 +282,7 @@ h5 {
     color: white;
     padding: 0px 10px;
     text-align: center;
-}
+} */
 
 .tituloActividad {
     color: black;
@@ -251,6 +297,10 @@ h6 {
     color: black;
 }
 */
+
+.textos-sector p {
+    font-size: 1.2em;
+}
 
 .imgNoticia1 {
     padding: 10px;
@@ -353,6 +403,22 @@ h6 {
 
 .image_container_voley {
     background-image: url("images/actividades/voley.jpg");
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5%;
+}
+
+.images img {
+    padding: 0.2%;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
 }
 
 .image_container_zumba {
