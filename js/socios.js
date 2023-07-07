@@ -1,3 +1,8 @@
+// La función principal "socios" nos muestra en primera instancia una ventana
+// para poder loguearnos. Podemos loguearnos, registrarnos en caso que no esté
+// registrado, e incluso acceso a una lista de beneficios a las cuales pueden 
+// acceder siendo socios.
+
 function socios() {
     const centralBody = document.getElementById("central-body");
     const textoBotonSocios = `
@@ -18,7 +23,7 @@ function socios() {
                 <button class="register-button" id="register-button">No estás registrado?¡Regístrate aquí!</button>
             </div>
             <div class="ventajas">
-                <p> Averiguá las ventajas de hacerte Socio haciendo click <a href="registro.html">aquí</a> </p>
+                <button class="register-button" id="averigua-button">Averiguá las ventajas de hacerte Socio!</button>
             <div>
         </div>
     `;
@@ -38,6 +43,13 @@ function socios() {
         registrarUsuario(); 
     });
 
+    const botonAveriguar = document.getElementById('averigua-button');
+    botonAveriguar.addEventListener('click', function (e) {
+        e.preventDefault();
+        averiguarBeneficios(); 
+    });
+
+    // A esta funcion entra una vez logueado:
     function menuUsuarios() {
         const centralBody = document.getElementById("central-body");
         const textoMenuUsuarios = `
@@ -80,6 +92,7 @@ function socios() {
     
     }
 
+    // Función para registrar nuevo socio:
     function registrarUsuario() {
         const centralBody = document.getElementById("central-body");
         const textoRegistrarUsuario = `
@@ -124,12 +137,41 @@ function socios() {
 
     }
 
+    function averiguarBeneficios() {
+        const centralBody = document.getElementById("central-body");
+        const textoBeneficiosUsuario = `
+        <div class="titulo">Socios</div>
+        <div class="center-beneficios">
+        <div id="info-container" class="contenedor-informacion">
+            <h2 class="titulo-beneficios">Beneficios para socios:</h2>
+            
+                <strong>Descuentos en tiendas y espectaculos</strong> 
+                <p class="beneficios">Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
+                <br>
+                <strong>Acceso a áreas exclusivas del club</strong> 
+                <p class="beneficios">Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
+                <br>
+                <strong>Participación en eventos y torneos especiales</strong> 
+                <p class="beneficios">Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</p>
+                <br>
+                <strong>Ofertas especiales en actividades deportivas</strong> 
+                <p class="beneficios">Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</p>
+            
+        </div>
+    </div>
+        `;
+    
+        centralBody.innerHTML = "";
+        centralBody.innerHTML = textoBeneficiosUsuario;
+
+    }
 
 
 
 
 
 
+// Tabla que muestra el estado de las cuotas de un socio loegueado:
 function cuotas() {
     const centralBody = document.getElementById("info-container");
     const textoMenuCuotas = `
@@ -202,26 +244,27 @@ function cuotas() {
     centralBody.innerHTML = textoMenuCuotas;
 }
 
+// Ventana que muestra los beneficios de los socios:
 function mostrarBeneficios() {
     const centralBody = document.getElementById("info-container");
     const textoMenuBeneficios = `
     <div class="center">
         <div id="info-container" class="contenedor-informacion">
-            <h2 class="titulo-informacion">Beneficios para socios:</h2>
-            <ul class="lista-beneficios">
+            <h2 class="titulo-beneficios">Beneficios para socios:</h2>
+            
                 <strong>Descuentos en tiendas y espectaculos</strong> 
-                <p>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
+                <h6>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</h6>
                 <br>
                 <strong>Acceso a áreas exclusivas del club</strong> 
-                <p>Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
+                <h6>Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</h6>
                 <br>
                 <strong>Participación en eventos y torneos especiales</strong> 
-                <p>Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</p>
+                <h6>Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</h6>
                 <br>
                 <strong>Ofertas especiales en actividades deportivas</strong> 
-                <p>Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</p>
+                <h6>Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</h6>
                 <br>
-            </ul>
+            
         </div>
     </div>
         
@@ -230,6 +273,7 @@ function mostrarBeneficios() {
     centralBody.innerHTML = textoMenuBeneficios;
 }
 
+// Ventana de sugerencias para socios logueados:
 function mostrarSugerencias() {
     const centralBody = document.getElementById("info-container");
     const textoMenuSugerencias = `

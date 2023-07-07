@@ -9,19 +9,19 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="js/main.js"></script>
     <script src="js/home.js"></script>
     <script src="js/socios.js"></script>
     <script src="js/actividades.js"></script>
     <script src="js/contacto.js"></script>
     <script src="js/galeria.js"></script>
     <script src="js/noticias.js"></script>
-    <script src="js/menuUsuarios.js"></script>
 </head>
 
 <body>
     <div class="container">
-
+        <!-- El div class="header" contiene los divs del encabezado de la pagina 
+        que queda fijo en cada pantalla que vayamos navegando. Ellos son: el escudo,
+        el título y los logos de las redes sociales -->
         <div class="header">
             <div class="logo-container">
                 <div class="escudo">
@@ -43,9 +43,12 @@
                 </div>
             </div>
         </div>
-
+<!-- 
+        El div central se divide en dos divs: uno el "side-bar"que es el que muestra
+        la barra lateral con el menu que queda fijo por donde vayamos vavegando,
+        y el div "central-body" que es el que va a ir cambiando depende que parte
+        del menu vayamos eligiendo -->
         <div class="central">
-
             <div class="side-bar">
                 <div><button id="btnHome" class="normal">Home</button></div>
                 <div><button id="btnSocios" class="normal">Socios</button></div>
@@ -60,6 +63,9 @@
         </div>
     </div>
 
+
+    <!-- En este script hacemos el addEventListener de cada una de las opciones del 
+    menu de la barra lateral -->
     <script>
         const centralBody = document.getElementById("central-body");
         const botonHome = document.getElementById("btnHome");
@@ -68,13 +74,6 @@
         const botonContacto = document.getElementById("btnContacto");
         const botonGaleria = document.getElementById("btnGaleria");
         const botonNoticias = document.getElementById("btnNoticias");
-
-        const textoBotonHome = '<p> Se presionó el botón Home </p>';
-        const textoBotonSocios = '<p> Se presionó el botón Socios </p>';
-        const textoBotonActividades = '<p> Se presionó el botón Actividades </p>';
-        const textoBotonContacto = '<p> Se presionó el botón Contacto </p>';
-        const textoBotonGaleria = '<p> Se presionó el botón Galeria </p>';
-        const textoBotonNoticias = '<p> Se presionó el botón Noticias </p>';
 
         botonHome.addEventListener("click", home);
         botonSocios.addEventListener("click", socios);

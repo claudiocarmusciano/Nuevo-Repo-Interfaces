@@ -1,3 +1,5 @@
+// JS que muestra los datos de contacto del club.
+
 function contacto() {
     
     const centralBody = document.getElementById("central-body");

@@ -1,3 +1,5 @@
+// JS que limpia la pantalla cada vez que se presione Home en el menú principal.
+
 function home() {
 
     const centralBody = document.getElementById("central-body");

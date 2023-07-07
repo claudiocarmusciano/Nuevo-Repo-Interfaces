@@ -1,3 +1,7 @@
+// En este js, la primer funcion "actividades" nos muestra todas las imagenes de todas las
+// actividades del club, en formato boton, y al hacer clic en cada una de ellas nos 
+// lleva a la función js de cada una donde se describen datos (dias y horarios, profesores, etc.). 
+
 function actividades() {
 
     const centralBody = document.getElementById("central-body");

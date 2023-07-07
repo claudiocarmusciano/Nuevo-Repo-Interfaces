@@ -1,3 +1,5 @@
+// Galería de imágenes varias 
+
 function galeria() {
     
     const centralBody = document.getElementById("central-body");
