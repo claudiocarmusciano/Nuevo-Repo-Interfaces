@@ -7,4 +7,7 @@ function home() {
 
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonHome;
+
+    centralBody.classList.add("home-section");
+
 }

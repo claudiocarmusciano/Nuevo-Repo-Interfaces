@@ -80,6 +80,8 @@ function noticias() {
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonNoticias;
 
+    centralBody.classList.remove("home-section");
+
     const searchInput = document.getElementById('searchInput');
     const contentDiv = document.getElementById('sector');
 

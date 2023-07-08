@@ -23,4 +23,7 @@ function galeria() {
 
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonGaleria;
+
+    centralBody.classList.remove("home-section");
+
 }

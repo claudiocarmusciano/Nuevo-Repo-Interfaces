@@ -31,6 +31,8 @@ function socios() {
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonSocios;
 
+    centralBody.classList.remove("home-section");
+
     const botonLoguearse = document.getElementById('login-button');
     botonLoguearse.addEventListener('click', function (e) {
         e.preventDefault();
@@ -143,7 +145,7 @@ function socios() {
         <div class="titulo">Socios</div>
         <div class="center-beneficios">
         <div id="info-container" class="contenedor-informacion">
-            <h2 class="titulo-beneficios">Beneficios para socios:</h2>
+            <h2 class="titulo-beneficios">Beneficios para socios</h2>
             
                 <strong>Descuentos en tiendas y espectaculos</strong> 
                 <p class="beneficios">Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>

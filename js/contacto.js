@@ -25,4 +25,6 @@ function contacto() {
 
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonContacto;
+
+    centralBody.classList.remove("home-section");
 }

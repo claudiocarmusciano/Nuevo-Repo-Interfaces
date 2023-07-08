@@ -77,7 +77,7 @@ h1 {
 
 .side-bar {
     width: 17%;
-    height: 90vh;
+    height: 79vh;
     background-color: green;
     display: flex;
     flex-direction: column;
@@ -145,23 +145,28 @@ button:hover {
 
 .central-body {
     width: 85%;
-    height: 90vh;
-    background-image: url("images/back_desk.jpg");
+    height: 79vh;
+    background-image: none; 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
+.home-section {
+    background-image: url("images/back_desk.jpg");
+    height: 79vh;
+  }
 
 
 .titulo {
     background-color: green;
     color: white;
     font-family: Arial;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-radius: 5px;
-    padding: 15px;
-    width: 90%;
-    margin: 3%;
+    padding: 13px;
+    width: 95.5%;
+    margin: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -194,13 +199,14 @@ button:hover {
     align-items: center;
     background-color: rgb(240, 240, 240);
     height: 45%;
-    margin: 3%;
+    margin: 2%;
     border-radius: 5px;
-    font-size: 1.5vw;
     width: 50%;
     padding-top: 30px;
+    padding-right: 20px;
     font-family: Arial;
     height: auto;
+    border: 1px solid rgb(67, 66, 66);
 }
 
 .login-form div {
@@ -223,7 +229,7 @@ button:hover {
 }
 
 .form-group {
-    padding: 15px;
+    padding: 10px;
     width: 30vw;
 }
 
@@ -260,7 +266,7 @@ button:hover {
     max-height: 90%;
     overflow: auto;
     margin: 3%;
-    height: 80%;
+    height: 75%;
     width: 90%;
     background-color: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -272,7 +278,7 @@ button:hover {
     max-height: 90%;
     overflow: auto;
     margin: 3%;
-    height: 70%;
+    height: 65%;
     width: 90%;
     background-color: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -284,7 +290,7 @@ button:hover {
     max-height: 90%;
     overflow: auto;
     margin: 3%;
-    height: 70%;
+    height: 65%;
     width: 90%;
     background-color: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -496,7 +502,6 @@ h4 {
     padding: 40px;
     width: 48%;
     height: 50%;
-    /* margin-top: -10%; */
     margin-left: 18%;
     border-radius: 5px; 
     position: absolute;
@@ -582,11 +587,11 @@ h4 {
     border: none;
     border-radius: 10px;
     padding: 5%;
-    margin: 3%;
-    margin-top: 10%;
+    margin: 15px;
     color: white;
     font-size: inherit;
     cursor: pointer;
+    margin-left: 35%;
 }
 
 .register-button:hover {
@@ -598,20 +603,19 @@ h4 {
 
 .registro-form {
     background-color: white;
-    border: 4px solid black;
+    border: 1px solid black;
     padding: 20px;
-    width: 40%; 
-    height: 60%; 
-    margin-top: 1%;
-    margin-left: 3%;
+    width: 33%; 
+    height: 57%; 
+    margin-left: 1.5%;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     position: absolute;
   }
   
   .registro-form label {
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 1.5px;
     font-weight: bold;
     font-family: Tahoma;
     font-size: 12px;
@@ -623,7 +627,6 @@ h4 {
 
 #register-button {
     padding-top: 20px;
-
 }
 
 .ventajas {
@@ -702,7 +705,7 @@ h4 {
 
 .contenedor-informacion .titulo-beneficios {
     font-size: 150%;
-    padding: 2%;
+    padding: 3%;
 }
 
 strong {

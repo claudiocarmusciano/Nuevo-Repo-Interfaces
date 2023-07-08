@@ -61,6 +61,9 @@ function actividades() {
 
     centralBody.innerHTML = "";
     centralBody.innerHTML = textoBotonActividades;
+
+    centralBody.classList.remove("home-section");
+
 }
 
 function acrobacia() {
