@@ -107,14 +107,14 @@ function noticias() {
           }
         }
         
-        scrollToHighlighted();
+        // scrollToHighlighted();
       });
       
-      function scrollToHighlighted() {
-        const highlights = document.getElementsByClassName('highlight');
+      // function scrollToHighlighted() {
+      //   const highlights = document.getElementsByClassName('highlight');
         
-        if (highlights.length > 0) {
-          highlights[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      }
+      //   if (highlights.length > 0) {
+      //     highlights[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      //   }
+      // }
 }

@@ -187,7 +187,7 @@ button:hover {
 }
 
 .titulo .busqueda input {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: Arial;
 }
 
@@ -709,3 +709,31 @@ strong {
     font-family: Arial;
 }
 
+
+
+
+/* Oculta las flechas de scroll en la dirección vertical  */
+/* body::-webkit-scrollbar {
+    width: 0.5em; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+  }
+   */
+
+
+  
+   .error-message {
+    display: none; 
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .error-message.show {
+    display: block; 
+  }

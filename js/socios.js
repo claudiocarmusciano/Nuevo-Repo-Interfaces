@@ -19,12 +19,13 @@ function socios() {
                 </div>
                 <button class="login-button" id="login-button">Loguearse</button>
             </form>
+            <div id="error-message" class="error-message"></div>
             <div class="registro-container">
                 <button class="register-button" id="register-button">No estás registrado?¡Regístrate aquí!</button>
             </div>
             <div class="ventajas">
                 <button class="register-button" id="averigua-button">Averiguá las ventajas de hacerte Socio!</button>
-            <div>
+            </div>
         </div>
     `;
 
@@ -36,8 +37,25 @@ function socios() {
     const botonLoguearse = document.getElementById('login-button');
     botonLoguearse.addEventListener('click', function (e) {
         e.preventDefault();
-        menuUsuarios(); 
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const errorMessage = document.getElementById('error-message');
+
+        if (username === '' || password === '') {
+            errorMessage.textContent = 'Por favor, completa todos los campos del login.';
+            errorMessage.classList.add('show'); 
+
+            setTimeout(function() {
+                errorMessage.classList.remove('show');
+            }, 2000);
+        } else {
+            menuUsuarios();
+        }
     });
+
+
+
+
 
     const botonRegistrarse = document.getElementById('register-button');
     botonRegistrarse.addEventListener('click', function (e) {
