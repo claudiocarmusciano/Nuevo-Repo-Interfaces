@@ -53,10 +53,6 @@ function socios() {
         }
     });
 
-
-
-
-
     const botonRegistrarse = document.getElementById('register-button');
     botonRegistrarse.addEventListener('click', function(e) {
         e.preventDefault();
@@ -166,7 +162,7 @@ function socios() {
             <h2 class="titulo-beneficios">Beneficios para socios</h2>
             
                 <strong>Descuentos en tiendas y espectaculos</strong> 
-                <p class="beneficios">Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
+                <p class="beneficios">Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales.</p>
                 <br>
                 <strong>Acceso a áreas exclusivas del club</strong> 
                 <p class="beneficios">Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
@@ -198,6 +194,7 @@ function socios() {
         <div class="center">
             <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Información de las cuotas del socio:</h2>
+                <br>
                 <table class="tabla-informacion">
                     <thead>
                         <tr>
@@ -270,10 +267,8 @@ function socios() {
         const textoMenuBeneficios = `
     <div class="center">
         <div id="info-container" class="contenedor-informacion">
-            <h2 class="titulo-beneficios">Beneficios para socios:</h2>
-            
                 <strong>Descuentos en tiendas y espectaculos</strong> 
-                <p class="p-beneficios">Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
+                <p class="p-beneficios">Obtén descuentos exclusivos al realizar compras en las tiendas sponsor del club y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
                 <br>
                 <strong>Acceso a áreas exclusivas del club</strong> 
                 <p class="p-beneficios">Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
@@ -295,19 +290,62 @@ function socios() {
     function mostrarSugerencias() {
         const centralBody = document.getElementById("info-container");
         const textoMenuSugerencias = `
-    <div class="center">
+          <div class="center-sugerencias">
             <div id="info-container" class="contenedor-informacion">
-                <h2 class="titulo-informacion">Sugerencias</h2>
-                <h4>Escribe tu sugerencia:</h4>
-                <div class="sugerencias-container">
-                    <textarea id="sugerencia" name="sugerencia" rows="15" cols="100"></textarea>
-                    <button id="enviar-sugerencia">Enviar</button>
-                </div>
+              <h2 class="titulo-informacion">Sugerencias</h2>
+              <h4>Escribe tu sugerencia:</h4>
+              <div class="sugerencias-container">
+                <textarea id="sugerencia" name="sugerencia" rows="15" cols="100"></textarea>
+                <button id="enviar-sugerencia">Enviar</button>
+              </div>
             </div>
-    </div>
-    
-    `;
+            <div id="mensaje" class="mensaje"></div>
+          </div>
+        `;
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoMenuSugerencias;
-    }
+      
+        const enviarButton = document.getElementById("enviar-sugerencia");
+        enviarButton.addEventListener("click", validarYEnviarSugerencia);
+      }
+      
+      function validarYEnviarSugerencia() {
+        const sugerenciaText = document.getElementById("sugerencia").value.trim();
+        const mensaje = document.getElementById("mensaje");
+      
+        if (sugerenciaText === "") {
+          mensaje.innerHTML = "Debes escribir una sugerencia.";
+          mensaje.classList.add("mensaje-error");
+      
+          setTimeout(() => {
+            mensaje.innerHTML = "";
+            mensaje.classList.remove("mensaje-error");
+          }, 2000);
+        } else {
+          mostrarMensajeExito();
+        }
+      }
+      
+      function mostrarMensajeExito() {
+        const centralBody = document.getElementById("info-container");
+        const mensaje = document.getElementById("mensaje");
+        mensaje.innerHTML = "¡Gracias por enviarnos tu sugerencia! Fué enviada con éxito.";
+        mensaje.classList.remove("mensaje-error"); 
+        centralBody.classList.add("sin-borde");
+        
+        centralBody.innerHTML = "";
+        centralBody.appendChild(mensaje);
+      
+        const botonOK = document.createElement("button");
+        botonOK.innerText = "OK";
+        botonOK.classList.add("enviar-button"); 
+        botonOK.addEventListener("click", volverAlMenuUsuarios);
+        mensaje.appendChild(botonOK);
+      }
+      
+      function volverAlMenuUsuarios() {
+        menuUsuarios();
+      }
+      
+
 }

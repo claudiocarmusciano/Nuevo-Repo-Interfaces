@@ -77,7 +77,7 @@ h1 {
 
 .side-bar {
     width: 17%;
-    height: 78vh;
+    height: 79vh;
     background-color: green;
     display: flex;
     flex-direction: column;
@@ -157,7 +157,7 @@ button:hover {
 }
 
 .image-home {
-    height: 77.9vh;
+    height: 79vh;
     width: 100%;
 }
 
@@ -471,6 +471,10 @@ h4 {
     height: 40%;
 }
 
+.center-sugerencias {
+    height: 50%;
+}
+
 #enviar-sugerencia {
     margin-top: 10px;
 }
@@ -494,9 +498,8 @@ h4 {
 .info-container {
     max-width: 48%;
     max-height: 90%;
-    overflow: auto;
     background-color: white;
-    border: 4px solid black;
+    border: 2px solid black;
     padding: 40px;
     width: 48%;
     height: 50%;
@@ -585,8 +588,6 @@ h4 {
     white-space: nowrap;
 }
 
-
-/* REGISTRO LOGIN SOCIOS */
 
 .registro-form {
     background-color: white;
@@ -693,31 +694,59 @@ strong {
     font-family: Arial;
 }
 
-
-
-
-/* Oculta las flechas de scroll en la dirección vertical  */
-/* body::-webkit-scrollbar {
-    width: 0.5em; 
-  }
-  
-  body::-webkit-scrollbar-track {
-    background-color: transparent; 
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: transparent; 
-  }
-   */
-
-
-  
-   .error-message {
+.error-message {
     display: none; 
     color: red;
     margin-top: 10px;
+}
+  
+.error-message.show {
+    display: block; 
+}
+
+
+body {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.mensaje-container {
+    display: flex;
+    align-items: center;
   }
   
-  .error-message.show {
-    display: block; 
+  .mensaje {
+    margin-right: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .enviar-button {
+    font-size: 110%;
+    background-color: green;
+    color: white;
+    padding: 3%;
+    border: none;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin: 15px;
+    font-size: inherit;
+    cursor: pointer;
+    margin-left: 2%;
+  }
+  
+  .enviar-button:hover {
+    background-color: rgb(114, 236, 149);
+  }
+
+  .mensaje-error {
+    color: red;
+  }
+    
+  .sin-borde {
+    border: none;
   }
