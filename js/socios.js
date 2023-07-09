@@ -35,7 +35,7 @@ function socios() {
     centralBody.classList.remove("home-section");
 
     const botonLoguearse = document.getElementById('login-button');
-    botonLoguearse.addEventListener('click', function (e) {
+    botonLoguearse.addEventListener('click', function(e) {
         e.preventDefault();
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
@@ -58,15 +58,15 @@ function socios() {
 
 
     const botonRegistrarse = document.getElementById('register-button');
-    botonRegistrarse.addEventListener('click', function (e) {
+    botonRegistrarse.addEventListener('click', function(e) {
         e.preventDefault();
-        registrarUsuario(); 
+        registrarUsuario();
     });
 
     const botonAveriguar = document.getElementById('averigua-button');
-    botonAveriguar.addEventListener('click', function (e) {
+    botonAveriguar.addEventListener('click', function(e) {
         e.preventDefault();
-        averiguarBeneficios(); 
+        averiguarBeneficios();
     });
 
     // A esta funcion entra una vez logueado:
@@ -83,33 +83,33 @@ function socios() {
                 <div id="info-container" class="info-container"></div>
             </div>
         `;
-    
+
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoMenuUsuarios;
 
         const infoContainer = document.getElementById('info-container');
 
         const btnCuotas = document.getElementById('btnCuotas');
-        btnCuotas.addEventListener('click', function (e) {
+        btnCuotas.addEventListener('click', function(e) {
             e.preventDefault();
             infoContainer.style.display = 'block';
             cuotas();
         });
 
         const btnBeneficios = document.getElementById('btnBeneficios');
-        btnBeneficios.addEventListener('click', function (e) {
+        btnBeneficios.addEventListener('click', function(e) {
             e.preventDefault();
             infoContainer.style.display = 'block';
             mostrarBeneficios();
         });
 
         const btnSugerencias = document.getElementById('btnSugerencias');
-        btnSugerencias.addEventListener('click', function (e) {
+        btnSugerencias.addEventListener('click', function(e) {
             e.preventDefault();
             infoContainer.style.display = 'block';
             mostrarSugerencias();
         });
-    
+
     }
 
     // Función para registrar nuevo socio:
@@ -151,7 +151,7 @@ function socios() {
             </form>
         </div>
         `;
-    
+
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoRegistrarUsuario;
 
@@ -180,7 +180,7 @@ function socios() {
         </div>
     </div>
         `;
-    
+
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoBeneficiosUsuario;
 
@@ -191,10 +191,10 @@ function socios() {
 
 
 
-// Tabla que muestra el estado de las cuotas de un socio loegueado:
-function cuotas() {
-    const centralBody = document.getElementById("info-container");
-    const textoMenuCuotas = `
+    // Tabla que muestra el estado de las cuotas de un socio loegueado:
+    function cuotas() {
+        const centralBody = document.getElementById("info-container");
+        const textoMenuCuotas = `
         <div class="center">
             <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Información de las cuotas del socio:</h2>
@@ -259,44 +259,42 @@ function cuotas() {
             </div>
            
     `;
-    
-    centralBody.innerHTML = "";
-    centralBody.innerHTML = textoMenuCuotas;
-}
 
-// Ventana que muestra los beneficios de los socios:
-function mostrarBeneficios() {
-    const centralBody = document.getElementById("info-container");
-    const textoMenuBeneficios = `
+        centralBody.innerHTML = "";
+        centralBody.innerHTML = textoMenuCuotas;
+    }
+
+    // Ventana que muestra los beneficios de los socios:
+    function mostrarBeneficios() {
+        const centralBody = document.getElementById("info-container");
+        const textoMenuBeneficios = `
     <div class="center">
         <div id="info-container" class="contenedor-informacion">
             <h2 class="titulo-beneficios">Beneficios para socios:</h2>
             
                 <strong>Descuentos en tiendas y espectaculos</strong> 
-                <h6>Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</h6>
+                <p class="p-beneficios">Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales que se realicen en el club.</p>
                 <br>
                 <strong>Acceso a áreas exclusivas del club</strong> 
-                <h6>Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</h6>
+                <p class="p-beneficios">Disfruta del acceso a áreas exclusivas del club, como el salón de reuniones, pileta y canchas, donde podrás divertirte y disfrutar.</p>
                 <br>
                 <strong>Participación en eventos y torneos especiales</strong> 
-                <h6>Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</h6>
+                <p class="p-beneficios">Tendrás la oportunidad de participar en eventos y torneos especiales organizados por el club en diversas disciplinas deportivas.</p>
                 <br>
                 <strong>Ofertas especiales en actividades deportivas</strong> 
-                <h6>Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</h6>
-                <br>
-            
+                <p class="p-beneficios">Descuentos y promociones exclusivas en actividades como clases de tenis, natación, yoga, pilates, gimnasia aeróbica, entre otras.</p>        
         </div>
     </div>
         
     `;
-    centralBody.innerHTML = "";
-    centralBody.innerHTML = textoMenuBeneficios;
-}
+        centralBody.innerHTML = "";
+        centralBody.innerHTML = textoMenuBeneficios;
+    }
 
-// Ventana de sugerencias para socios logueados:
-function mostrarSugerencias() {
-    const centralBody = document.getElementById("info-container");
-    const textoMenuSugerencias = `
+    // Ventana de sugerencias para socios logueados:
+    function mostrarSugerencias() {
+        const centralBody = document.getElementById("info-container");
+        const textoMenuSugerencias = `
     <div class="center">
             <div id="info-container" class="contenedor-informacion">
                 <h2 class="titulo-informacion">Sugerencias</h2>
@@ -309,7 +307,7 @@ function mostrarSugerencias() {
     </div>
     
     `;
-    centralBody.innerHTML = "";
-    centralBody.innerHTML = textoMenuSugerencias;
-}
+        centralBody.innerHTML = "";
+        centralBody.innerHTML = textoMenuSugerencias;
+    }
 }

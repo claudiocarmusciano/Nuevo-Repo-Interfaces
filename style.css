@@ -77,7 +77,7 @@ h1 {
 
 .side-bar {
     width: 17%;
-    height: 79vh;
+    height: 78vh;
     background-color: green;
     display: flex;
     flex-direction: column;
@@ -144,8 +144,8 @@ button:hover {
 
 .central-body {
     width: 85%;
-    height: 79vh;
-    background-image: none; 
+    height: 70vh;
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -154,8 +154,12 @@ button:hover {
 .home-section {
     background-image: url("images/back_desk.jpg");
     height: 79vh;
-  }
+}
 
+.image-home {
+    height: 77.9vh;
+    width: 100%;
+}
 
 .titulo {
     background-color: green;
@@ -169,7 +173,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .titulo div p {
@@ -309,7 +312,6 @@ button:hover {
     text-align-last: left;
 }
 
-
 .sector,
 p,
 h2,
@@ -353,14 +355,15 @@ h4 {
 .textos-sector p {
     font-size: 1.2em;
     text-align-last: center;
-
 }
 
 .textos-sector-contacto {
     font-size: 1.2em;
 }
 
-.textos-sector-contacto p, h2, h4 {
+.textos-sector-contacto p,
+h2,
+h4 {
     padding: 0px;
     text-align: left;
 }
@@ -384,8 +387,6 @@ h4 {
 .textoH3 {
     padding-top: 2%;
 }
-
-
 
 .body {
     font-size: 18px;
@@ -480,7 +481,7 @@ h4 {
 
 #enviar-sugerencia {
     font-size: 110%;
-    background-color:green;
+    background-color: green;
     color: white;
     padding: 2%;
     border-radius: 10px;
@@ -500,7 +501,7 @@ h4 {
     width: 48%;
     height: 50%;
     margin-left: 18%;
-    border-radius: 5px; 
+    border-radius: 5px;
     position: absolute;
 }
 
@@ -552,18 +553,6 @@ h4 {
     padding: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .registro-container {
     display: flex;
     align-items: center;
@@ -592,9 +581,10 @@ h4 {
 }
 
 .register-button:hover {
-    background: none; 
+    background: none;
     white-space: nowrap;
 }
+
 
 /* REGISTRO LOGIN SOCIOS */
 
@@ -602,24 +592,24 @@ h4 {
     background-color: white;
     border: 1px solid black;
     padding: 20px;
-    width: 33%; 
-    height: 57%; 
+    width: 33%;
+    height: 57%;
     margin-left: 1.5%;
     border-radius: 5px;
     margin-bottom: 4px;
     position: absolute;
-  }
-  
-  .registro-form label {
+}
+
+.registro-form label {
     display: block;
     margin-bottom: 1.5px;
     font-weight: bold;
     font-family: Tahoma;
     font-size: 12px;
-  }
-  
-  .registro-form .form-group {
-    margin-bottom: -18px; 
+}
+
+.registro-form .form-group {
+    margin-bottom: -18px;
 }
 
 #register-button {
@@ -637,14 +627,13 @@ h4 {
     font-size: 2vw;
     border-radius: 5px;
     padding: 15px;
-    width: 90%; 
+    width: 90%;
     margin: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
- 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="password"] {
@@ -652,13 +641,8 @@ h4 {
     padding: 6px 10px;
     border: 1px solid #0e0e0e;
     border-radius: 5px;
-    background-color: #a49f9f; 
+    background-color: #a49f9f;
 }
-
-
-
-
-
 
 #central-body-beneficios {
     width: 85%;
@@ -709,6 +693,7 @@ strong {
     font-family: Arial;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -737,3 +722,9 @@ strong {
   .error-message.show {
     display: block; 
   }
+=======
+.p-beneficios {
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+>>>>>>> bc401a91c39e122f49e426ed9fd3f7388a997389
