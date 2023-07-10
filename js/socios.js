@@ -112,46 +112,99 @@ function socios() {
     function registrarUsuario() {
         const centralBody = document.getElementById("central-body");
         const textoRegistrarUsuario = `
-        <div class="titulo">Socios</div>
-        <div class="registro-form"> 
-            <form>
-                <div class="form-group">
-                    <label for="fullname">Apellido y Nombre</label>
-                    <input type="text" id="fullname" name="fullname">
-                </div>
-                <div class="form-group">
-                    <label for="address">Dirección</label>
-                    <input type="text" id="address" name="address">
-                </div>
-                <div class="form-group">
-                    <label for="dni">DNI</label>
-                    <input type="text" id="dni" name="dni">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Teléfono</label>
-                    <input type="text" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" id="usuario" name="usuario">
-                </div>
-                <div class="form-group">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password">
-                </div>
-                <button type="submit" class="boton-registrarse">Registrarse</button>
+          <div class="titulo">Socios</div>
+          <div class="registro-form"> 
+            <form id="registrationForm">
+              <div class="form-group">
+                <label for="fullname">Apellido y Nombre</label>
+                <input type="text" id="fullname" name="fullname">
+              </div>
+              <div class="form-group">
+                <label for="address">Dirección</label>
+                <input type="text" id="address" name="address">
+              </div>
+              <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="text" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario">
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password">
+              </div>
+              <button type="submit" class="boton-registrarse">Registrarse</button>
             </form>
-        </div>
+            <div id="mensaje-error" class="mensaje-error"></div>
+          </div>
         `;
-
+      
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoRegistrarUsuario;
-
-    }
+      
+        const registrationForm = document.getElementById("registrationForm");
+        const mensajeError = document.getElementById("mensaje-error");
+        registrationForm.addEventListener("submit", function(event) {
+          event.preventDefault();
+      
+          const fullname = document.getElementById("fullname").value;
+          const address = document.getElementById("address").value;
+          const dni = document.getElementById("dni").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const usuario = document.getElementById("usuario").value;
+          const password = document.getElementById("password").value;
+      
+          if (fullname === "" || address === "" || dni === "" || email === "" || phone === "" || usuario === "" || password === "") {
+            mostrarMensaje("Por favor, completa todos los campos del registro.", "rojo");
+          } else {
+            mostrarMensajeExitoRegistro();
+          }
+        });
+      
+        function mostrarMensaje(mensaje, color) {
+          mensajeError.innerText = mensaje;
+          mensajeError.style.color = color;
+          mensajeError.style.fontSize = "18px";
+          setTimeout(function() {
+            mensajeError.innerText = "";
+          }, 2000);
+        }
+      
+        function mostrarMensajeExitoRegistro() {
+            centralBody.innerHTML = "";
+          
+            const mensaje = document.createElement("div");
+            mensaje.innerText = "¡Tu registro ha sido procesado! Ya estás registrado como usuario en nuestro sistema.";
+            mensaje.style.fontSize = "18px";
+            mensaje.classList.add("mensaje-exito"); 
+            centralBody.appendChild(mensaje);
+          
+            const botonOK = document.createElement("button");
+            botonOK.innerText = "OK";
+            botonOK.classList.add("enviar-button");
+            botonOK.setAttribute("id", "boton-ok"); 
+            botonOK.addEventListener("click", volverAlMenuSocios);
+            centralBody.appendChild(botonOK);
+          }
+      
+        function volverAlMenuSocios() {
+          socios();
+        }
+      }
+      
+    
+    
 
     function averiguarBeneficios() {
         const centralBody = document.getElementById("central-body");
@@ -159,7 +212,7 @@ function socios() {
         <div class="titulo">Socios</div>
         <div class="center-beneficios">
         <div id="info-container" class="contenedor-informacion">
-            <h2 class="titulo-beneficios">Beneficios para socios</h2>
+            <h2 class="titulo-beneficios">Conviértete en socio y podras disfrutar de beneficios exclusivos!</h2>
             
                 <strong>Descuentos en tiendas y espectaculos</strong> 
                 <p class="beneficios">Obtén descuentos exclusivos al realizar compras en las tiendas sponsor y disfruta de entradas para espectáculos, obras de teatro y eventos culturales.</p>
@@ -299,7 +352,7 @@ function socios() {
                 <button id="enviar-sugerencia">Enviar</button>
               </div>
             </div>
-            <div id="mensaje" class="mensaje"></div>
+            <div id="mensaje-sugerencias" class="mensaje-sugerencias"></div>
           </div>
         `;
         centralBody.innerHTML = "";
@@ -311,15 +364,15 @@ function socios() {
       
       function validarYEnviarSugerencia() {
         const sugerenciaText = document.getElementById("sugerencia").value.trim();
-        const mensaje = document.getElementById("mensaje");
+        const mensaje = document.getElementById("mensaje-sugerencias");
       
         if (sugerenciaText === "") {
-          mensaje.innerHTML = "Debes escribir una sugerencia.";
-          mensaje.classList.add("mensaje-error");
+          mensaje.innerHTML = "Por favor, debes escribir una sugerencia.";
+          mensaje.classList.add("mensaje-sugerencias");
       
           setTimeout(() => {
             mensaje.innerHTML = "";
-            mensaje.classList.remove("mensaje-error");
+            mensaje.classList.remove("mensaje-sugerencias");
           }, 2000);
         } else {
           mostrarMensajeExito();
@@ -328,9 +381,10 @@ function socios() {
       
       function mostrarMensajeExito() {
         const centralBody = document.getElementById("info-container");
-        const mensaje = document.getElementById("mensaje");
-        mensaje.innerHTML = "¡Gracias por enviarnos tu sugerencia! Fué enviada con éxito.";
-        mensaje.classList.remove("mensaje-error"); 
+        const mensaje = document.getElementById("mensaje-sugerencias");
+        mensaje.innerHTML = "¡Gracias por enviarnos tu sugerencia! Tu sugerencia fué enviada con éxito.";
+        mensaje.style.fontSize = "18px";
+        mensaje.classList.remove("mensaje-sugerencias"); 
         centralBody.classList.add("sin-borde");
         
         centralBody.innerHTML = "";

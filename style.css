@@ -575,7 +575,7 @@ h4 {
     background-color: green;
     border: none;
     border-radius: 10px;
-    padding: 5%;
+    padding: 4%;
     margin: 15px;
     color: white;
     font-size: inherit;
@@ -592,9 +592,9 @@ h4 {
 .registro-form {
     background-color: white;
     border: 1px solid black;
-    padding: 20px;
+    padding: 15px;
     width: 33%;
-    height: 57%;
+    height: 58%;
     margin-left: 1.5%;
     border-radius: 5px;
     margin-bottom: 4px;
@@ -603,7 +603,7 @@ h4 {
 
 .registro-form label {
     display: block;
-    margin-bottom: 1.5px;
+    margin-bottom: 1px;
     font-weight: bold;
     font-family: Tahoma;
     font-size: 12px;
@@ -719,10 +719,11 @@ body {
   
   .mensaje {
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 17px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .enviar-button {
@@ -736,7 +737,7 @@ body {
     margin: 15px;
     font-size: inherit;
     cursor: pointer;
-    margin-left: 2%;
+    margin-left: 32%;
   }
   
   .enviar-button:hover {
@@ -745,8 +746,36 @@ body {
 
   .mensaje-error {
     color: red;
+    margin-left: 12%;
+    white-space: nowrap;
+    margin-top: -11px;
   }
     
   .sin-borde {
     border: none;
   }
+
+  .registro-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mensaje-sugerencias {
+    color: red;
+    margin-left: 30%;
+    white-space: nowrap;
+    margin-top: -4px;
+    font-size: 17px;
+  }
+
+  .mensaje-exito {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20%;
+  }
+  
+  #boton-ok {
+    margin: 0 auto;
+    margin-left: 45%;
+  }
+  
