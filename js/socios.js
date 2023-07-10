@@ -43,13 +43,13 @@ function socios() {
 
         if (username === '' || password === '') {
             errorMessage.textContent = 'Por favor, completa todos los campos del login.';
-            errorMessage.classList.add('show'); 
+            errorMessage.classList.add('show');
 
             setTimeout(function() {
                 errorMessage.classList.remove('show');
             }, 2000);
         } else {
-            menuUsuarios();
+            menuUsuarios(username);
         }
     });
 
@@ -66,10 +66,10 @@ function socios() {
     });
 
     // A esta funcion entra una vez logueado:
-    function menuUsuarios() {
+    function menuUsuarios(username) {
         const centralBody = document.getElementById("central-body");
         const textoMenuUsuarios = `
-            <div class="titulo">Socios</div>
+            <div class="titulo">Socios <span class="nombre-usuario">${username}</span></div>
             <div class="sidebar2-infocontainer">
                 <div class="sidebar2">
                     <div><button id="btnCuotas" class="normal">Cuotas</button></div>
@@ -148,63 +148,63 @@ function socios() {
             <div id="mensaje-error" class="mensaje-error"></div>
           </div>
         `;
-      
+
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoRegistrarUsuario;
-      
+
         const registrationForm = document.getElementById("registrationForm");
         const mensajeError = document.getElementById("mensaje-error");
         registrationForm.addEventListener("submit", function(event) {
-          event.preventDefault();
-      
-          const fullname = document.getElementById("fullname").value;
-          const address = document.getElementById("address").value;
-          const dni = document.getElementById("dni").value;
-          const email = document.getElementById("email").value;
-          const phone = document.getElementById("phone").value;
-          const usuario = document.getElementById("usuario").value;
-          const password = document.getElementById("password").value;
-      
-          if (fullname === "" || address === "" || dni === "" || email === "" || phone === "" || usuario === "" || password === "") {
-            mostrarMensaje("Por favor, completa todos los campos del registro.", "rojo");
-          } else {
-            mostrarMensajeExitoRegistro();
-          }
+            event.preventDefault();
+
+            const fullname = document.getElementById("fullname").value;
+            const address = document.getElementById("address").value;
+            const dni = document.getElementById("dni").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const usuario = document.getElementById("usuario").value;
+            const password = document.getElementById("password").value;
+
+            if (fullname === "" || address === "" || dni === "" || email === "" || phone === "" || usuario === "" || password === "") {
+                mostrarMensaje("Por favor, completa todos los campos del registro.", "rojo");
+            } else {
+                mostrarMensajeExitoRegistro();
+            }
         });
-      
+
         function mostrarMensaje(mensaje, color) {
-          mensajeError.innerText = mensaje;
-          mensajeError.style.color = color;
-          mensajeError.style.fontSize = "18px";
-          setTimeout(function() {
-            mensajeError.innerText = "";
-          }, 2000);
+            mensajeError.innerText = mensaje;
+            mensajeError.style.color = color;
+            mensajeError.style.fontSize = "18px";
+            setTimeout(function() {
+                mensajeError.innerText = "";
+            }, 2000);
         }
-      
+
         function mostrarMensajeExitoRegistro() {
             centralBody.innerHTML = "";
-          
+
             const mensaje = document.createElement("div");
             mensaje.innerText = "¡Tu registro ha sido procesado! Ya estás registrado como usuario en nuestro sistema.";
             mensaje.style.fontSize = "18px";
-            mensaje.classList.add("mensaje-exito"); 
+            mensaje.classList.add("mensaje-exito");
             centralBody.appendChild(mensaje);
-          
+
             const botonOK = document.createElement("button");
             botonOK.innerText = "OK";
             botonOK.classList.add("enviar-button");
-            botonOK.setAttribute("id", "boton-ok"); 
+            botonOK.setAttribute("id", "boton-ok");
             botonOK.addEventListener("click", volverAlMenuSocios);
             centralBody.appendChild(botonOK);
-          }
-      
-        function volverAlMenuSocios() {
-          socios();
         }
-      }
-      
-    
-    
+
+        function volverAlMenuSocios() {
+            socios();
+        }
+    }
+
+
+
 
     function averiguarBeneficios() {
         const centralBody = document.getElementById("central-body");
@@ -357,49 +357,49 @@ function socios() {
         `;
         centralBody.innerHTML = "";
         centralBody.innerHTML = textoMenuSugerencias;
-      
+
         const enviarButton = document.getElementById("enviar-sugerencia");
         enviarButton.addEventListener("click", validarYEnviarSugerencia);
-      }
-      
-      function validarYEnviarSugerencia() {
+    }
+
+    function validarYEnviarSugerencia() {
         const sugerenciaText = document.getElementById("sugerencia").value.trim();
         const mensaje = document.getElementById("mensaje-sugerencias");
-      
+
         if (sugerenciaText === "") {
-          mensaje.innerHTML = "Por favor, debes escribir una sugerencia.";
-          mensaje.classList.add("mensaje-sugerencias");
-      
-          setTimeout(() => {
-            mensaje.innerHTML = "";
-            mensaje.classList.remove("mensaje-sugerencias");
-          }, 2000);
+            mensaje.innerHTML = "Por favor, debes escribir una sugerencia.";
+            mensaje.classList.add("mensaje-sugerencias");
+
+            setTimeout(() => {
+                mensaje.innerHTML = "";
+                mensaje.classList.remove("mensaje-sugerencias");
+            }, 2000);
         } else {
-          mostrarMensajeExito();
+            mostrarMensajeExito();
         }
-      }
-      
-      function mostrarMensajeExito() {
+    }
+
+    function mostrarMensajeExito() {
         const centralBody = document.getElementById("info-container");
         const mensaje = document.getElementById("mensaje-sugerencias");
         mensaje.innerHTML = "¡Gracias por enviarnos tu sugerencia! Tu sugerencia fué enviada con éxito.";
         mensaje.style.fontSize = "18px";
-        mensaje.classList.remove("mensaje-sugerencias"); 
+        mensaje.classList.remove("mensaje-sugerencias");
         centralBody.classList.add("sin-borde");
-        
+
         centralBody.innerHTML = "";
         centralBody.appendChild(mensaje);
-      
+
         const botonOK = document.createElement("button");
         botonOK.innerText = "OK";
-        botonOK.classList.add("enviar-button"); 
+        botonOK.classList.add("enviar-button");
         botonOK.addEventListener("click", volverAlMenuUsuarios);
         mensaje.appendChild(botonOK);
-      }
-      
-      function volverAlMenuUsuarios() {
+    }
+
+    function volverAlMenuUsuarios() {
         menuUsuarios();
-      }
-      
+    }
+
 
 }
