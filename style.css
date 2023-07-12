@@ -779,3 +779,7 @@ body {
     margin-left: 45%;
   }
   
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }

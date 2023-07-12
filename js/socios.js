@@ -5,6 +5,7 @@
 
 function socios() {
     const centralBody = document.getElementById("central-body");
+    let usuarioActual = "";
     const textoBotonSocios = `
         <div class="titulo">Socios</div>
         <div class="login-form">
@@ -67,9 +68,10 @@ function socios() {
 
     // A esta funcion entra una vez logueado:
     function menuUsuarios(username) {
+        usuarioActual = username;
         const centralBody = document.getElementById("central-body");
         const textoMenuUsuarios = `
-            <div class="titulo">Socios <span class="nombre-usuario">${username}</span></div>
+        <div class="titulo">Socios ${usuarioActual ? `<span class="nombre-usuario">${usuarioActual}</span>` : ""}</div>
             <div class="sidebar2-infocontainer">
                 <div class="sidebar2">
                     <div><button id="btnCuotas" class="normal">Cuotas</button></div>
@@ -199,6 +201,7 @@ function socios() {
         }
 
         function volverAlMenuSocios() {
+            // usuarioActual = ""; 
             socios();
         }
     }
@@ -398,7 +401,7 @@ function socios() {
     }
 
     function volverAlMenuUsuarios() {
-        menuUsuarios();
+        mostrarSugerencias();
     }
 
 
